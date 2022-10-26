@@ -12,13 +12,15 @@ import Foot from '../components/Footer';
 export default function Home() {
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
-      <Navbar/>
-      <CardsCarousel/>
-      <Grid/>
-      <SiteImage/>
-      <HeroImageRight/>
-      <Reviews/>
-      <Foot/>
+      {/* <div className='bg-white'> */}
+      <Navbar />
+      <CardsCarousel />
+      <Grid />
+      <SiteImage />
+      <HeroImageRight />
+      <Reviews />
+      <Foot />
+      {/* </div> */}
     </MantineProvider>
   );
 }

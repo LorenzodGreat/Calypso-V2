@@ -10,13 +10,13 @@ export default function Intro() {
             <source src={main} type="video/mp4" />
           </video>
         </div>
-        <div className='fixed inset-0 mt-[70vh] grid place-content-center'>
+        <div className='fixed inset-0 ml-[100vh] mt-[75vh] grid place-content-center'>
           <a
             class="inline-block hover:scale-125 hover:duration-300 rounded-full bg-gradient-to-r duration-300 from-violet-300 via-pink-500 to-sky-300 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
             href="/Home"
           >
             <span
-              class="block rounded-full bg-black m-2 hover:text-black border-4 border-black text-white px-8 py-3 text-3xl sm:text-sm md:text-3xl font-medium hover:bg-transparent"
+              class="block rounded-full bg-black m-2 hover:text-black border-4 border-black text-white px-8 py-3 text-xl sm:text-sm md:text-xl font-medium hover:bg-transparent"
             >
               Click To Continue
             </span>
