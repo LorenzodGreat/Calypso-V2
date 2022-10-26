@@ -105,7 +105,7 @@ export default function Navbar() {
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
 
-          <a href="#" className="text-base font-medium text-white hover:text-gray-900">
+          <a href="/" className="text-base font-medium text-white hover:text-gray-900">
               Home
             </a>
 
@@ -186,11 +186,11 @@ export default function Navbar() {
 
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="#" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-900">
+            <a href="https://cal.tasoko.com/login" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-900">
               Login
             </a>
-            <a
-              href="#"
+            <a 
+              href="https://cal.tasoko.com/register"
               className="ml-8 bg-[#593196] whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-[#6c2869]"
             >
               Register Today

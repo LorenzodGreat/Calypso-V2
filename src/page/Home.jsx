@@ -12,7 +12,6 @@ import Foot from '../components/Footer';
 export default function Home() {
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
-      {/* <div className='bg-white'> */}
       <Navbar />
       <CardsCarousel />
       <Grid />
@@ -20,7 +19,6 @@ export default function Home() {
       <HeroImageRight />
       <Reviews />
       <Foot />
-      {/* </div> */}
     </MantineProvider>
   );
 }
