@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import Calypso from '../img/Calypso.png'; // Tell webpack this JS file uses this image
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
@@ -17,6 +17,7 @@ import {
   XIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import { useState } from 'react';
 
 const solutions = [
   {
@@ -80,9 +81,21 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+
 export default function Navbar() {
+  
+  const [color, setColor] = useState(false)
+  const changeColor = () => {
+    if (window.scrollY >= 90) {
+      setColor(true)
+    } else {
+      setColor(false)
+    }
+  }
+  window.addEventListener('scroll', changeColor)
+
   return (
-    <Popover id='nav' className="fixed bg-transparent z-20 w-screen">
+    <Popover id='nav' className={color ? "fixed bg-[#ffffff91] text-[#593196] backdrop-blur-sm z-20 w-screen" : "fixed bg-transparent text-white z-20 w-screen"}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -90,7 +103,7 @@ export default function Navbar() {
               <span className="sr-only">Calypso</span>
               <img
                 // className="h-20 w-auto sm:h-10"
-                width={130}
+                width={100}
                 height={74}
                 src={Calypso}
                 alt="Calypso"
@@ -105,7 +118,7 @@ export default function Navbar() {
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
 
-          <a href="/" className="text-base font-medium text-white hover:text-gray-900">
+            <a href="/" className={color ? 'text-sm font-medium  hover:text-gray-900' : 'text-base font-medium  hover:text-gray-900'}>
               Home
             </a>
 
@@ -114,15 +127,14 @@ export default function Navbar() {
                 <div>
                   <Popover.Button
                     className={classNames(
-                      open ? 'text-white text-base font-medium' : 'text-white text-base font-medium',
+                      open ? ' text-base font-medium' : ' text-base font-medium',
                       'group bg-transparent rounded-md inline-flex items-center text-base font-medium hover:text-sky-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                     )}
                   >
                     <span>Services</span>
                     <ChevronDownIcon
                       className={classNames(
-                        open ? 'text-gray-600' : 'text-gray-400',
-                        'ml-2 h-5 w-5 group-hover:text-gray-500'
+                        'ml-2 h-5 w-5'
                       )}
                       aria-hidden="true"
                     />
@@ -174,24 +186,24 @@ export default function Navbar() {
               )}
             </Popover>
 
-            <a href="#" className="text-base font-medium text-white hover:text-gray-900">
-            Rate Calculator
+            <a href="#" className="text-base font-medium  hover:text-gray-900">
+              Rate Calculator
             </a>
-            <a href="#" className="text-base font-medium text-white hover:text-gray-900">
-            About Us
+            <a href="#" className="text-base font-medium  hover:text-gray-900">
+              About Us
             </a>
-            <a href="#" className="text-base font-medium text-white hover:text-gray-900">
-            Shop Calypso
+            <a href="#" className="text-base font-medium  hover:text-gray-900">
+              Shop Calypso
             </a>
 
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="https://cal.tasoko.com/login" className="whitespace-nowrap text-base font-medium text-white hover:text-gray-900">
+            <a href="https://cal.tasoko.com/login" className="whitespace-nowrap text-base font-medium  hover:text-gray-900">
               Login
             </a>
-            <a 
+            <a
               href="https://cal.tasoko.com/register"
-              className="ml-8 bg-[#593196] whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-[#6c2869]"
+              className="ml-8 bg-[#593196] text-white whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium  hover:bg-[#6c2869]"
             >
               Register Today
             </a>
@@ -263,7 +275,7 @@ export default function Navbar() {
               <div>
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium  bg-indigo-600 hover:bg-indigo-700"
                 >
                   Sign up
                 </a>
