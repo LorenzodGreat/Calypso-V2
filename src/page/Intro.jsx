@@ -12,6 +12,7 @@ export default function Intro() {
   return (
     <>
       <div className='relative'>
+        {clientWidth}
         <div className='w-screen h-screen'>
           <video className='w-full h-full object-cover' muted autoPlay playsInline >
             {clientWidth > 400 && (
