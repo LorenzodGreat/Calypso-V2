@@ -95,7 +95,7 @@ export default function Navbar() {
   window.addEventListener('scroll', changeColor)
 
   return (
-    <Popover id='nav' className={color ? "fixed bg-[#ffffff91] text-[#593196] backdrop-blur-sm z-20 w-screen" : "fixed bg-transparent text-white z-20 w-screen"}>
+    <Popover id='nav' className={color ? "fixed bg-[#ffffff91] text-[#593196] backdrop-blur-sm z-20 shadow-lg w-screen" : "fixed bg-transparent text-white z-20 w-screen"}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -126,10 +126,13 @@ export default function Navbar() {
               {({ open }) => (
                 <div>
                   <Popover.Button
-                    className={classNames(
-                      open ? ' text-base font-medium' : ' text-base font-medium',
-                      'group bg-transparent rounded-md inline-flex items-center text-base font-medium hover:text-sky-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
-                    )}
+                  className={color ? classNames(
+                    open ? ' text-sm font-medium' : ' text-sm font-medium',
+                    'group bg-transparent rounded-md inline-flex items-center text-sm font-medium hover:text-amber-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                  ) : classNames(
+                    open ? ' text-base font-medium' : ' text-base font-medium',
+                    'group bg-transparent rounded-md inline-flex items-center text-base font-medium hover:text-sky-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                  )}
                   >
                     <span>Services</span>
                     <ChevronDownIcon
@@ -186,24 +189,24 @@ export default function Navbar() {
               )}
             </Popover>
 
-            <a href="#" className="text-base font-medium  hover:text-gray-900">
+            <a href="#" className={color ? "text-sm font-medium hover:text-amber-400" : "text-md font-medium hover:text-amber-400"}>
               Rate Calculator
             </a>
-            <a href="#" className="text-base font-medium  hover:text-gray-900">
+            <a href="#" className={color ? "text-sm font-medium hover:text-amber-400" : "text-md font-medium hover:text-amber-400"}>
               About Us
             </a>
-            <a href="#" className="text-base font-medium  hover:text-gray-900">
+            <a href="#" className={color ? "text-sm font-medium hover:text-amber-400" : "text-md font-medium hover:text-amber-400"}>
               Shop Calypso
             </a>
 
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="https://cal.tasoko.com/login" className="whitespace-nowrap text-base font-medium  hover:text-gray-900">
+            <a href="https://cal.tasoko.com/login" className="whitespace-nowrap text-sm font-medium hover:text-amber-400">
               Login
             </a>
             <a
               href="https://cal.tasoko.com/register"
-              className="ml-8 bg-[#593196] text-white whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium  hover:bg-[#6c2869]"
+              className={color ? "ml-8 bg-[#593196] text-white whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border-2 border-white rounded-md shadow-md text-base font-medium  hover:bg-[#1eadd8] " :"ml-8 bg-[#593196] text-white whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border-2 border-white rounded-md shadow-md text-base font-medium  hover:bg-[#1eadd8] "}
             >
               Register Today
             </a>
