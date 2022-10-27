@@ -13,7 +13,7 @@ export default function Intro() {
     <>
       <div className='relative'>
         <div className='w-screen h-screen'>
-          <video className='w-full h-full object-cover' muted autoPlay controls='' >
+          <video className='w-full h-full object-cover' muted autoPlay playsInline >
             {clientWidth > 400 ? (
 
               <source src={main2} type="video/mp4" />
