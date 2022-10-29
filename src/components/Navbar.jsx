@@ -4,14 +4,18 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
   BookmarkAltIcon,
+  CalculatorIcon,
   CalendarIcon,
   ChartBarIcon,
   CursorClickIcon,
+  HomeIcon,
   MenuIcon,
   PhoneIcon,
   PlayIcon,
+  QuestionMarkCircleIcon,
   RefreshIcon,
   ShieldCheckIcon,
+  ShoppingBagIcon,
   SupportIcon,
   ViewGridIcon,
   XIcon,
@@ -21,60 +25,75 @@ import { useState } from 'react';
 
 const solutions = [
   {
-    name: 'Analytics',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
-    icon: ChartBarIcon,
-  },
-  {
-    name: 'Engagement',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
-    icon: CursorClickIcon,
-  },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
-  {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: ViewGridIcon,
-  },
-  {
-    name: 'Automations',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
-    icon: RefreshIcon,
-  },
-]
-const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
-]
-const resources = [
-  {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums or contact support.',
-    href: '#',
+    name: 'Our Services',
+    description: 'Get a better understanding of what we do.',
+    href: '/Services',
     icon: SupportIcon,
   },
   {
-    name: 'Guides',
-    description: 'Learn how to maximize our platform to get the most out of it.',
-    href: '#',
-    icon: BookmarkAltIcon,
+    name: 'Items not acceptable for Carriage',
+    description: 'Learn about what you can ship in.',
+    href: '/Services1',
+    icon: SupportIcon,
   },
   {
-    name: 'Events',
+    name: 'Customer’s obligations:',
+    description: 'Speak directly to  customers requirements for getting their packages.',
+    href: '/Services2',
+    icon: SupportIcon,
+  },
+  { name: 'Inspection', description: "Your customers' data will be safe and secure.", href: '/Services3', icon: SupportIcon },
+  {
+    name: 'Collection/Delivery of packages',
+    description: "Connect with third-party tools that you're already using.",
+    href: '/Services4',
+    icon: SupportIcon,
+  },
+  {
+    name: 'Collection/Delivery of packages',
+    description: 'Speaks on collecting your packages.',
+    href: '/Services5',
+    icon: SupportIcon,
+  },
+  {
+    name: 'Procedure for Claims in case of loss or damage to packages',
+    description: 'Collecting lost packages needed',
+    href: '/Services1',
+    icon: SupportIcon,
+  },
+  {
+    name: 'Services',
+    description: 'Build strategic funnels that will drive your customers to convert',
+    href: '/Services1',
+    icon: SupportIcon,
+  },
+  {
+    name: 'Services',
+    description: 'Build strategic funnels that will drive your customers to convert',
+    href: '/Services1',
+    icon: SupportIcon,
+  },
+]
+const resources = [
+  {
+    name: 'Rate Calculator',
+    description: 'Get all of your questions answered in our forums or contact support.',
+    href: '/Rate',
+    icon: CalculatorIcon,
+  },
+  {
+    name: 'About',
+    description: 'Learn how to maximize our platform to get the most out of it.',
+    href: '/About',
+    icon: SupportIcon,
+  },
+  {
+    name: 'Login',
     description: 'See what meet-ups and other events we might be planning near you.',
     href: '#',
     icon: CalendarIcon,
   },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
-]
-const recentPosts = [
-  { id: 1, name: 'Boost your conversion rate', href: '#' },
-  { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-  { id: 3, name: 'Improve your customer experience', href: '#' },
+  { name: 'Register', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
 ]
 
 function classNames(...classes) {
@@ -83,7 +102,7 @@ function classNames(...classes) {
 
 
 export default function Navbar() {
-  
+
   const [color, setColor] = useState(false)
   const changeColor = () => {
     if (window.scrollY >= 90) {
@@ -95,7 +114,7 @@ export default function Navbar() {
   window.addEventListener('scroll', changeColor)
 
   return (
-    <Popover id='nav' className={color ? "fixed bg-[#ffffff91] text-[#593196] backdrop-blur-sm z-20 shadow-lg w-screen" : "fixed bg-transparent text-white z-20 w-screen"}>
+    <Popover id='nav' className={color ? "fixed bg-[#593196b0] text-white backdrop-blur-sm z-20 shadow-lg w-screen" : "fixed bg-[#ffffff00] text-[#fdfdfd] transition-all duration-300 z-20 w-screen"}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -126,13 +145,13 @@ export default function Navbar() {
               {({ open }) => (
                 <div>
                   <Popover.Button
-                  className={color ? classNames(
-                    open ? ' text-sm font-medium' : ' text-sm font-medium',
-                    'group bg-transparent rounded-md inline-flex items-center text-sm font-medium hover:text-amber-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
-                  ) : classNames(
-                    open ? ' text-base font-medium' : ' text-base font-medium',
-                    'group bg-transparent rounded-md inline-flex items-center text-base font-medium hover:text-sky-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
-                  )}
+                    className={color ? classNames(
+                      open ? ' text-sm font-medium' : ' text-sm font-medium',
+                      'group bg-transparent rounded-md inline-flex items-center text-sm font-medium hover:text-amber-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                    ) : classNames(
+                      open ? ' text-base font-medium' : ' text-base font-medium',
+                      'group bg-transparent rounded-md inline-flex items-center text-base font-medium hover:text-sky-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                    )}
                   >
                     <span>Services</span>
                     <ChevronDownIcon
@@ -169,19 +188,6 @@ export default function Navbar() {
                             </a>
                           ))}
                         </div>
-                        <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
-                          {callsToAction.map((item) => (
-                            <div key={item.name} className="flow-root">
-                              <a
-                                href={item.href}
-                                className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
-                              >
-                                <item.icon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
-                                <span className="ml-3">{item.name}</span>
-                              </a>
-                            </div>
-                          ))}
-                        </div>
                       </div>
                     </Popover.Panel>
                   </Transition>
@@ -206,7 +212,7 @@ export default function Navbar() {
             </a>
             <a
               href="https://cal.tasoko.com/register"
-              className={color ? "ml-8 bg-[#593196] text-white whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border-2 border-white rounded-md shadow-md text-base font-medium  hover:bg-[#1eadd8] " :"ml-8 bg-[#593196] text-white whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border-2 border-white rounded-md shadow-md text-base font-medium  hover:bg-[#1eadd8] "}
+              className={color ? "ml-8 bg-[#593196] text-white whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border-2 border-white rounded-md shadow-md text-base font-medium  hover:bg-[#AD44F6] " : "ml-8 bg-[#593196] text-white whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border-2 border-white rounded-md shadow-md text-base font-medium  hover:bg-[#AD44F6] "}
             >
               Register Today
             </a>
@@ -258,12 +264,12 @@ export default function Navbar() {
             </div>
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Pricing
+                <a href="/Home" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  Home
                 </a>
 
-                <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Docs
+                <a href="/Shop" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                Shop Calypso
                 </a>
                 {resources.map((item) => (
                   <a
@@ -276,15 +282,15 @@ export default function Navbar() {
                 ))}
               </div>
               <div>
-                <a
-                  href="#"
+                <a href="https://cal.tasoko.com/register"
                   className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium  bg-indigo-600 hover:bg-indigo-700"
                 >
                   Sign up
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
-                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                  <a href="https://cal.tasoko.com/login"
+                    className="text-indigo-600 hover:text-indigo-500">
                     Sign in
                   </a>
                 </p>

@@ -66,7 +66,7 @@ export function SiteImage() {
             Get back to home page
           </Button> */}
         </div>
-        <div className='grid grid-cols-1 lg:grid-cols-5 gap-2 align-baseline gap-x-2'>
+        <div className='grid grid-cols-3 lg:grid-cols-5 gap-2 align-baseline gap-x-2'>
           <a target={'blank'} href="https://www.amazon.com/">
             <div className='hover:scale-125 grid bg-[#232f3e] place-content-center border p-2 duration-300 rounded-lg shadow-md'>
               <img src={amazon} height="50" width="125"

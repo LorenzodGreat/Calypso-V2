@@ -21,3 +21,88 @@
   .video-content {
     z-index: 2;
   }
+
+	.scrollbar {
+		width:100%;
+		max-width:100%;
+		height:50px;
+		background-color:#ffffff;
+		overflow-y:scroll;
+	}
+	
+	#scrollbar-custom::-webkit-scrollbar{
+		width:12px;
+    padding: 6px;
+		background-color:whitesmoke;
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+	}
+	#scrollbar-custom::-webkit-scrollbar:horizontal{
+		height:12px;
+	}
+	#scrollbar-custom::-webkit-scrollbar-track{
+		/* border:1px #c8c8c8 solid; */
+		border-radius:10px;
+		/* -webkit-box-shadow:0 0 6px #ffffff inset; */
+	}
+	#scrollbar-custom::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to left top, #3c065e, #009bdf, #0089f7, #546afc, #ad26e3);
+		border-radius:16px;
+	}
+	#scrollbar-custom::-webkit-scrollbar-thumb:hover{
+    padding: 6px;
+		background-color:#15cbdd;
+		/* border:1px solid #333333; */
+	}
+	#scrollbar-custom::-webkit-scrollbar-thumb:active{
+		background-color:#420b71;
+		border:1px solid #ffffff;
+	}
+
+	.tabs{
+		font-family:arial;
+		/* margin:0 auto; */
+		/* width:70%; */
+		text-align:center;
+		margin-top:15vh;
+	}
+	
+	.tab-buttons{
+		padding: 12px;  
+		display: grid;
+		  grid-template-columns: repeat(4, minmax(0, 1fr));
+		margin-bottom:50px;
+
+	}
+	  
+	  /* button{
+		margin-right:15px;
+		font-size:20px;
+		background:transparent;
+		border:none;
+		outline:none;
+		padding:10px 20px ;
+		cursor:pointer;
+		color:rgba(0,0,0,.4);
+		transition:all ease-in-out .2s;
+		border-bottom:2px solid transparent;
+		
+	  } */
+	  .active{
+		/* border-bottom:2px solid #42b3f4; */
+		border-style: double;
+		border-color: white;
+		color: rgb(173 68 246 / var(--tw-text-opacity));
+		background-image: linear-gradient(to right, var(--tw-gradient-stops));
+		--tw-gradient-from: #2f0b6d;
+		--tw-gradient-to: rgb(220 68 253 / 0);
+		--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+		--tw-gradient-to: #AD44F6;
+		--tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+		--tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+		box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+		font-weight: 600;
+		padding: 6px;
+		color:white;
+		border-radius: 9999px;
+		font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	  }

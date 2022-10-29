@@ -1,15 +1,19 @@
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 import { Carousel } from '@mantine/carousel';
+import Slide1 from '../img/slide1.jpg'
+import Slide2 from '../img/slide2.jpg'
+import Slide3 from '../img/slide3.jpg'
 
 export default function CardsCarousel() {
-  const autoplay = useRef(Autoplay({ delay: 2000 }));
+  const autoplay = useRef(Autoplay({ delay: 4000 }));
 
   return (
       <Carousel
         sx={{ maxWidth: '' }}
         mx="auto"
         withIndicators
+        withControls='true'
         maxWidth={'full'}
         // height={600}
         plugins={[autoplay.current]}
@@ -17,11 +21,10 @@ export default function CardsCarousel() {
         onMouseLeave={autoplay.current.reset}
       >
 
-        <Carousel.Slide ><img className='w-full shadow-xl' src="https://images.unsplash.com/photo-1661961110218-35af7210f803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" /></Carousel.Slide>
-        <Carousel.Slide ><img className='w-full shadow-xl' src="https://images.unsplash.com/photo-1661961110218-35af7210f803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" /></Carousel.Slide>
-        <Carousel.Slide ><img className='w-full shadow-xl' src="https://images.unsplash.com/photo-1661961110218-35af7210f803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" /></Carousel.Slide>
-        <Carousel.Slide ><img className='w-full shadow-xl' src="https://images.unsplash.com/photo-1661961110218-35af7210f803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" /></Carousel.Slide>
-        <Carousel.Slide ><img className='w-full shadow-xl' src="https://images.unsplash.com/photo-1661961110218-35af7210f803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" /></Carousel.Slide>
+        <Carousel.Slide ><div className='relative'><img className='w-full shadow-xl relative' src={Slide1} alt="" /><div className='absolute hidden md:flex lg:flex bottom-28 left-[3rem]'><button className='text-red-500'>here</button></div></div></Carousel.Slide>
+        <Carousel.Slide ><div className='relative'><img className='w-full shadow-xl relative' src={Slide2} alt="" /><div className='absolute hidden md:flex lg:flex bottom-28 left-[3rem]'><button className='text-red-500'>here</button></div></div></Carousel.Slide>
+        <Carousel.Slide ><div className='relative'><img className='w-full shadow-xl relative' src={Slide3} alt="" /><div className='absolute hidden md:flex lg:flex bottom-28 left-[3rem]'><button className='text-red-500'>here</button></div></div></Carousel.Slide>
+        
         {/* ...other slides */}
       </Carousel>
   );
