@@ -1,5 +1,5 @@
 import { createStyles, Container, Title, Text, Button } from '@mantine/core';
-
+import React from 'react';
 const useStyles = createStyles((theme) => ({
   root: {
     backgroundColor: '#11284b',

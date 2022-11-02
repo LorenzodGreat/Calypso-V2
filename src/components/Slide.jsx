@@ -1,5 +1,4 @@
-// import './app.css';
-
+import React from 'react';
 function Slide() {
     return (<>
         <div class="slider">

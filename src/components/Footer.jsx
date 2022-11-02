@@ -1,19 +1,4 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+import React from 'react';
 import { ChevronDownIcon } from '@heroicons/react/solid'
 import Calypso from '../img/Calypso.png'; // Tell webpack this JS file uses this image
 
@@ -109,7 +94,7 @@ const navigation = {
 
 export default function Example() {
   return (
-    <footer className="bg-white text-[#593196b0] backdrop-blur-sm " aria-labelledby="footer-heading">
+    <footer className="text-white bg-[#350b6f] backdrop-blur-sm " aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -118,11 +103,11 @@ export default function Example() {
           <div className="grid grid-cols-2 gap-8 xl:col-span-4">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-[#593196b0] tracking-wider uppercase">Solutions</h3>
+                <h3 className="text-sm font-semibold text-[#17bfe0] tracking-wider uppercase">Solutions</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-900 hover:text-white">
+                      <a href={item.href} className="text-base text-gray-100 hover:text-white">
                         {item.name}
                       </a>
                     </li>
@@ -130,11 +115,11 @@ export default function Example() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-[#593196b0] tracking-wider uppercase">Support</h3>
+                <h3 className="text-sm font-semibold text-[#17bfe0] tracking-wider uppercase">Support</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-900 hover:text-white">
+                      <a href={item.href} className="text-base text-gray-100 hover:text-white">
                         {item.name}
                       </a>
                     </li>
@@ -144,11 +129,11 @@ export default function Example() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-[#593196b0] tracking-wider uppercase">Company</h3>
+                <h3 className="text-sm font-semibold text-[#17bfe0] tracking-wider uppercase">Company</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-900 hover:text-white">
+                      <a href={item.href} className="text-base text-gray-100 hover:text-white">
                         {item.name}
                       </a>
                     </li>
@@ -156,11 +141,11 @@ export default function Example() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-[#593196b0] tracking-wider uppercase">Legal</h3>
+                <h3 className="text-sm font-semibold text-[#17bfe0] tracking-wider uppercase">Legal</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-base text-gray-900 hover:text-white">
+                      <a href={item.href} className="text-base text-gray-100 hover:text-white">
                         {item.name}
                       </a>
                     </li>
@@ -172,10 +157,10 @@ export default function Example() {
           </div>
         <div className="border-t border-gray-700 pt-8 lg:flex lg:items-center lg:justify-between xl:mt-0">
           <div>
-            <h3 className="text-sm font-semibold text-[#593196b0] tracking-wider uppercase">
+            <h3 className="text-sm font-semibold text-white tracking-wider uppercase">
               Subscribe to our newsletter
             </h3>
-            <p className="mt-2 text-base text-gray-900">
+            <p className="mt-2 text-base text-[#17bfe0]">
               The latest news, articles, and resources, sent to your inbox weekly.
             </p>
           </div>
@@ -195,7 +180,7 @@ export default function Example() {
             <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <button
                 type="submit"
-                className="w-full bg-[#593196] border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-[#593196e2] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500"
+                className="w-full bg-[#17bfe0] border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-[#10a2c0] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-[#17bfe0]"
               >
                 Subscribe
               </button>
@@ -219,7 +204,7 @@ export default function Example() {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-base text-[#593196b0] md:mt-0 md:order-1">
+          <p className="mt-8 text-base text-[#350b6f] md:mt-0 md:order-1">
           © 2022 Calypso Shipping. All Rights Reserved.
           </p>
         </div>

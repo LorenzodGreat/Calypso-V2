@@ -1,3 +1,4 @@
+import React from 'react';
 import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 import { Carousel } from '@mantine/carousel';

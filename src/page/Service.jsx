@@ -2,10 +2,11 @@ import React from 'react'
 import { MantineProvider, Text } from '@mantine/core';
 import Navbar from './../components/Navbar';
 import Foot from '../components/Footer';
-import OurService from './OurService';
-import PKInvoice from './PKInvoice';
-import HowWork from './HowWork';
+import OurService from '../page/services/OurService';
+import PKInvoice from '../page/services/PKInvoice';
+import HowWork from '../page/services/HowWork';
 import Banner from './../img/Banner.jpg';
+import WSOnline from './services/WSOnline';
 
 export default function Service() {
     return (
@@ -35,7 +36,7 @@ export default function Service() {
                         </Tab>
                         <Tab label="4. Why Shop Online">
                             <div>
-
+                                <WSOnline />
                             </div>
                         </Tab>
                     </Tabs>

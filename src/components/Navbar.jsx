@@ -3,25 +3,15 @@ import Calypso from '../img/Calypso.png'; // Tell webpack this JS file uses this
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
-  BookmarkAltIcon,
   CalculatorIcon,
   CalendarIcon,
-  ChartBarIcon,
-  CursorClickIcon,
-  HomeIcon,
   MenuIcon,
-  PhoneIcon,
-  PlayIcon,
-  QuestionMarkCircleIcon,
-  RefreshIcon,
   ShieldCheckIcon,
-  ShoppingBagIcon,
   SupportIcon,
-  ViewGridIcon,
   XIcon,
 } from '@heroicons/react/outline'
-import { ChevronDownIcon } from '@heroicons/react/solid'
 import { useState } from 'react';
+import ServiceList from './Services';
 
 const solutions = [
   {
@@ -118,7 +108,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="/">
+            <a href="/Home">
               <span className="sr-only">Calypso</span>
               <img
                 // className="h-20 w-auto sm:h-10"
@@ -137,71 +127,17 @@ export default function Navbar() {
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
 
-            <a href="/" className={color ? 'text-sm font-medium  hover:text-gray-900' : 'text-base font-medium  hover:text-gray-900'}>
+            <a href="/Home" className={color ? 'text-sm font-medium font-sans hover:text-amber-400' : 'text-base font-medium  hover:text-amber-400'}>
               Home
             </a>
-
-            <Popover className="relative">
-              {({ open }) => (
-                <div>
-                  <Popover.Button
-                    className={color ? classNames(
-                      open ? ' text-sm font-medium' : ' text-sm font-medium',
-                      'group bg-transparent rounded-md inline-flex items-center text-sm font-medium hover:text-amber-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
-                    ) : classNames(
-                      open ? ' text-base font-medium' : ' text-base font-medium',
-                      'group bg-transparent rounded-md inline-flex items-center text-base font-medium hover:text-sky-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
-                    )}
-                  >
-                    <span>Services</span>
-                    <ChevronDownIcon
-                      className={classNames(
-                        'ml-2 h-5 w-5'
-                      )}
-                      aria-hidden="true"
-                    />
-                  </Popover.Button>
-
-                  <Transition
-                    as={Fragment}
-                    enter="transition ease-out duration-200"
-                    enterFrom="opacity-0 translate-y-1"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in duration-150"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 translate-y-1"
-                  >
-                    <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                      <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                          {solutions.map((item) => (
-                            <a
-                              key={item.name}
-                              href={item.href}
-                              className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                            >
-                              <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
-                              <div className="ml-4">
-                                <p className="text-base font-medium text-gray-900">{item.name}</p>
-                                <p className="mt-1 text-sm text-gray-500">{item.description}</p>
-                              </div>
-                            </a>
-                          ))}
-                        </div>
-                      </div>
-                    </Popover.Panel>
-                  </Transition>
-                </div>
-              )}
-            </Popover>
-
-            <a href="#" className={color ? "text-sm font-medium hover:text-amber-400" : "text-md font-medium hover:text-amber-400"}>
+            <ServiceList Services={color ? "text-sm inline-flex font-semibold font-sans hover:text-amber-400" : "text-base inline-flex font-semibold font-sans hover:text-amber-400"}/>
+            <a href="/Rate" className={color ? "text-sm font-medium font-sans hover:text-amber-400" : "text-md font-medium font-sans hover:text-amber-400"}>
               Rate Calculator
             </a>
-            <a href="#" className={color ? "text-sm font-medium hover:text-amber-400" : "text-md font-medium hover:text-amber-400"}>
+            <a href="/About" className={color ? "text-sm font-medium font-sans hover:text-amber-400" : "text-md font-medium font-sans hover:text-amber-400"}>
               About Us
             </a>
-            <a href="#" className={color ? "text-sm font-medium hover:text-amber-400" : "text-md font-medium hover:text-amber-400"}>
+            <a href="#" className={color ? "text-sm font-medium font-sans hover:text-amber-400" : "text-md font-medium font-sans hover:text-amber-400"}>
               Shop Calypso
             </a>
 
