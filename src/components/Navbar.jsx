@@ -40,20 +40,8 @@ const solutions = [
     icon: SupportIcon,
   },
   {
-    name: 'Collection/Delivery of packages',
-    description: 'Speaks on collecting your packages.',
-    href: '/Services5',
-    icon: SupportIcon,
-  },
-  {
     name: 'Procedure for Claims in case of loss or damage to packages',
     description: 'Collecting lost packages needed',
-    href: '/Services1',
-    icon: SupportIcon,
-  },
-  {
-    name: 'Services',
-    description: 'Build strategic funnels that will drive your customers to convert',
     href: '/Services1',
     icon: SupportIcon,
   },
@@ -83,7 +71,6 @@ const resources = [
     href: '#',
     icon: CalendarIcon,
   },
-  { name: 'Register', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
 ]
 
 function classNames(...classes) {
@@ -130,7 +117,7 @@ export default function Navbar() {
             <a href="/Home" className={color ? 'text-sm font-medium font-sans hover:text-amber-400' : 'text-base font-medium  hover:text-amber-400'}>
               Home
             </a>
-            <ServiceList Services={color ? "text-sm inline-flex font-semibold font-sans hover:text-amber-400" : "text-base inline-flex font-semibold font-sans hover:text-amber-400"}/>
+            <ServiceList Services={color ? "text-sm inline-flex font-semibold font-sans hover:text-amber-400" : "text-base inline-flex font-semibold font-sans hover:text-amber-400"} />
             <a href="/Rate" className={color ? "text-sm font-medium font-sans hover:text-amber-400" : "text-md font-medium font-sans hover:text-amber-400"}>
               Rate Calculator
             </a>
@@ -205,7 +192,7 @@ export default function Navbar() {
                 </a>
 
                 <a href="/Shop" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                Shop Calypso
+                  Shop Calypso
                 </a>
                 {resources.map((item) => (
                   <a
