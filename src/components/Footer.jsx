@@ -78,20 +78,7 @@ export default function Foot() {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="pb-8 xl:grid xl:grid-cols-4 xl:gap-8">
           <div className="grid grid-cols-2 gap-8 xl:col-span-4">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold text-[#17bfe0] tracking-wider uppercase">Contact</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <h1 className="text-base text-gray-100 hover:text-white">
-                        {item.name}
-                      </h1>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+         
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold text-[#17bfe0] tracking-wider uppercase">Company</h3>
@@ -117,6 +104,18 @@ export default function Foot() {
                   ))}
                 </ul>
               </div>
+            </div>
+              <div>
+                <h3 className="text-sm font-semibold text-[#17bfe0] tracking-wider uppercase">Contact</h3>
+                <ul role="list" className="mt-4 space-y-4">
+                  {navigation.solutions.map((item) => (
+                    <li key={item.name}>
+                      <h1 className="text-base text-gray-100 hover:text-white">
+                        {item.name}
+                      </h1>
+                    </li>
+                  ))}
+                </ul>
             </div>
           </div>
         </div>

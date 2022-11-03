@@ -66,14 +66,14 @@ export default function CardsCarousel() {
               <p className='text-white h-max text-[0.5rem] md:text-2xl lg:text-2xl sm:text-2xl font-base'>Trusted way to transport all your goods from there to here.
                 Providing the most realiable, hassle-free, with full transparency, customer centric shipping experience.</p>
             </div>
-            <div className='flex lg:space-x-8 pt-10 md:space-x-8 sm:space-x-8 space-x-4'>
+            <div className='flex lg:space-x-8 pt-8 md:space-x-8 sm:space-x-8 space-x-4'>
               <a href="https://cal.tasoko.com/register"> <button className='text-white font-semibold w-[10vh] sm:w-[50vh] md:w-[50vh] lg:w-[50vh] text-[0.5rem] sm:text-base md:text-base lg:text-base  bg-[#de4dc2] hover:scale-125 transition-all duration-300 hover:bg-[#1ba0bb] md:px-4 md:py-2 sm:px-4 sm:py-2 lg:px-4 lg:py-2 rounded-full border ring ring-[#de4dc2] hover:ring-[#de4dc2]'>Our Store</button></a>
             </div>
           </div>
         </div>
       </div>
       </Carousel.Slide>
-
+      
     </Carousel>
   );
 }

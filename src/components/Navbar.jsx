@@ -42,7 +42,7 @@ const solutions = [
   {
     name: 'Procedure for Claims in case of loss or damage to packages',
     description: 'Collecting lost packages needed',
-    href: '/Services1',
+    href: '/Services5',
     icon: SupportIcon,
   },
   {
