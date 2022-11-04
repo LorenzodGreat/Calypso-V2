@@ -81,28 +81,25 @@ export function HeroImageRight() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-              A{' '}
+              Always{' '}
               <Text
                 component="span"
                 inherit
                 variant="gradient"
                 gradient={{ from: 'pink', to: 'yellow' }}
               >
-                fully featured
+                Stay Alert
               </Text>{' '}
-              React components library
+              Never miss out on the latest news today
             </Title>
 
             <Text className={classes.description} mt={30}>
-              Build fully functional accessible web applications with ease – Mantine includes more
-              than 100 customizable components and hooks to cover you in any situation
+              Stay inform and up to date click the button below to get all the latest shipping news and package updates. 
             </Text>
 
             <Button
-              variant="gradient"
-              gradient={{ from: 'pink', to: 'yellow' }}
               size="xl"
-              className={classes.control}
+              className='bg-graident from-[] via-[] to-[] ring-2 ring-white'
               mt={40}
             >
               Get started

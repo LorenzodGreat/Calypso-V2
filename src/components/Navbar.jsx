@@ -98,7 +98,6 @@ export default function Navbar() {
             <a href="/Home">
               <span className="sr-only">Calypso</span>
               <img
-                // className="h-20 w-auto sm:h-10"
                 width={100}
                 height={74}
                 src={Calypso}

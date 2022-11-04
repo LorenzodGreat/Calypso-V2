@@ -12,16 +12,18 @@ function classNames(...classes) {
 export default function ServiceList({Services}) {
   return (
     <div >
-      <Menu as="div" className="relative inline-block text-left">
+      <Menu as="div" className="relative inline-block text-left  ">
         <div>
           <Menu.Button className={{ Services }}>
-          <span>Services</span>
+          <span>Services
+
                     <ChevronDownIcon
                       className={classNames(
-                        'ml-2 h-5 w-5'
-                      )}
-                      aria-hidden="true"
-                    />
+                        'h-5 absolute top-1 -right-6'
+                        )}
+                        aria-hidden="true"
+                        />
+                        </span>
                     
           </Menu.Button>
         </div>
@@ -164,73 +166,7 @@ export default function ServiceList({Services}) {
                         aria-hidden="true"
                       />
                     )}
-                    Collection/Delivery of packages
-                  </a>
-                )}
-              </Menu.Item>
-              <Menu.Item>
-                {({ active }) => (
-                  <a
-                    href='/Services' className={`${
-                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                  >
-                    {active ? (
-                      <SupportIcon
-                        className="mr-2 h-5 w-5"
-                        aria-hidden="true"
-                      />
-                    ) : (
-                      <SupportIcon
-                        className="mr-2 h-5 w-5"
-                        aria-hidden="true"
-                      />
-                    )}
                     Procedure for claims in case of loss or damage to packages
-                  </a>
-                )}
-              </Menu.Item>
-              <Menu.Item>
-                {({ active }) => (
-                  <a
-                    href='/Services' className={`${
-                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                  >
-                    {active ? (
-                      <SupportIcon
-                        className="mr-2 h-5 w-5"
-                        aria-hidden="true"
-                      />
-                    ) : (
-                      <SupportIcon
-                        className="mr-2 h-5 w-5"
-                        aria-hidden="true"
-                      />
-                    )}
-                    Services
-                  </a>
-                )}
-              </Menu.Item>
-              <Menu.Item>
-                {({ active }) => (
-                  <a
-                    href='/Services' className={`${
-                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                  >
-                    {active ? (
-                      <SupportIcon
-                        className="mr-2 h-5 w-5"
-                        aria-hidden="true"
-                      />
-                    ) : (
-                      <SupportIcon
-                        className="mr-2 h-5 w-5"
-                        aria-hidden="true"
-                      />
-                    )}
-                    Services
                   </a>
                 )}
               </Menu.Item>
