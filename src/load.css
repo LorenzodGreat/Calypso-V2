@@ -256,10 +256,6 @@
     width: 100px;
   }
 }
-html,
-body {
-  min-height: 100%;
-}
 
 .made-with-love {
   position: fixed;

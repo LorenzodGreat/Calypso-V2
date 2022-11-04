@@ -42,7 +42,7 @@ export default function CardsCarousel() {
       <Carousel.Slide ><div className='relative'>
         <img className='w-full shadow-xl relative' src={Slide2} alt="" />
         <div className='absolute md:flex lg:flex top-20 left-8 md:top-[4rem] md:left-[9rem] lg:top-[4rem] lg:left-[9rem]'>
-          <div className='w-[35vh] sm:w-[80vh] lg:w-[80vh] md:w-[80vh] space-y-4'>
+          <div className='w-[30vh] sm:w-[80vh] lg:w-[80vh] md:w-[80vh] space-y-4'>
             <div>
               <img src={Low} className="w-[8vh] md:block lg:block sm:w-[50vh] md:w-[50vh] lg:w-[50vh]" alt="opps" />
             </div>
@@ -65,7 +65,7 @@ export default function CardsCarousel() {
               <h1 className=' text-[#1ba0bb] font-semibold text-lg sm:text-6xl md:text-6xl lg:text-6xl'>Shop Calypso</h1>
               <p className='text-white h-max text-[0.5rem] md:text-2xl lg:text-2xl sm:text-2xl font-base'>Visit our online store for the best affordable gifts, latest electronics, appliances and more. </p>
             </div>
-            <div className='flex lg:space-x-8 pt-4 md:space-x-8 sm:space-x-8 space-x-4'>
+            <div className='flex lg:space-x-8 md:space-x-8 sm:space-x-8 space-x-2'>
               <a href="/Store"> <button className='text-white font-semibold w-[10vh] sm:w-[50vh] md:w-[50vh] lg:w-[50vh] text-[0.5rem] sm:text-base md:text-base lg:text-base  bg-[#de4dc2] hover:scale-125 transition-all duration-300 hover:bg-[#1ba0bb] md:px-4 md:py-2 sm:px-4 sm:py-2 lg:px-4 lg:py-2 rounded-full border ring ring-[#de4dc2] hover:ring-[#de4dc2]'>Our Store</button></a>
             </div>
           </div>
