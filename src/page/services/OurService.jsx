@@ -22,6 +22,8 @@ function OurService() {
                             <img class="absolute inset-0 h-full w-full object-cover" src={Service1} alt="Service Image" />
                             <div class="absolute inset-0 "></div>
                             <div class="absolute inset-0 "></div>
+                            <div class="relative px-8">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -65,19 +67,10 @@ function OurService() {
         <div>
             <h2 class="text-3xl my-6 text-gray-900 font-extrabold tracking-tight sm:text-4xl text-center">HERE’S A LIST OF OUR SERVICES</h2>
 
-            <div role="list" class="mt-3 grid grid-cols-1 p-4 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-2">
+            <div role="list" class="mt-3 grid grid-cols-1 p-6 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-2">
                 <div className="sm:flex">
                     <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-                        <svg
-                            className="h-32 w-full sm:w-32 border border-gray-300 bg-white text-gray-300"
-                            preserveAspectRatio="none"
-                            stroke="currentColor"
-                            fill="none"
-                            viewBox="0 0 200 200"
-                            aria-hidden="true"
-                        >
-                            <path vectorEffect="non-scaling-stroke" strokeWidth={1} d="M0 0l200 200M0 200L200 0" />
-                        </svg>
+                        <img className="h-32 w-full sm:w-32 border rounded-md shadow-md hover:scale-150 transition-all duration-500 border-gray-300 bg-white text-gray-300" src="https://media.istockphoto.com/id/499277049/photo/cargo-airplane.jpg?b=1&s=170667a&w=0&k=20&c=aPOOc4b--G753iXtPFBppIl0Xz8DsX1iIJfI39wwsT4=" alt="Air Freight" srcset="" />
                     </div>
                     <div>
                         <h4 className="text-lg font-bold">Air Freight</h4>
@@ -91,124 +84,60 @@ function OurService() {
                 </div>
                 <div className="sm:flex">
                     <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-                        <svg
-                            className="h-32 w-full sm:w-32 border border-gray-300 bg-white text-gray-300"
-                            preserveAspectRatio="none"
-                            stroke="currentColor"
-                            fill="none"
-                            viewBox="0 0 200 200"
-                            aria-hidden="true"
-                        >
-                            <path vectorEffect="non-scaling-stroke" strokeWidth={1} d="M0 0l200 200M0 200L200 0" />
-                        </svg>
+                        <img className="h-32 w-full sm:w-32 border rounded-md shadow-md hover:scale-150 transition-all duration-500 border-gray-300 bg-white text-gray-300" src="https://images.unsplash.com/photo-1617952739760-1dcae19a1d93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Sea Freight" srcset="" />
                     </div>
                     <div>
                         <h4 className="text-lg font-bold">Sea Freight </h4>
                         <p className="mt-1">
-                        E &D Container, Barrells, Pallets - Get fast delivery to Jamaica within 5-10 days (If you choose to use the Sea Freight then you can expect your item(s) to arrive within Jamaica in 5-10 business days without unforeseen delays.)
+                            E &D Container, Barrells, Pallets - Get fast delivery to Jamaica within 5-10 days (If you choose to use the Sea Freight then you can expect your item(s) to arrive within Jamaica in 5-10 business days without unforeseen delays.)
                         </p>
                     </div>
                 </div>
                 <div className="sm:flex">
                     <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-                        <svg
-                            className="h-32 w-full sm:w-32 border border-gray-300 bg-white text-gray-300"
-                            preserveAspectRatio="none"
-                            stroke="currentColor"
-                            fill="none"
-                            viewBox="0 0 200 200"
-                            aria-hidden="true"
-                        >
-                            <path vectorEffect="non-scaling-stroke" strokeWidth={1} d="M0 0l200 200M0 200L200 0" />
-                        </svg>
+                        <img className="h-32 w-full sm:w-32 border rounded-md shadow-md hover:scale-150 transition-all duration-500 border-gray-300 bg-white text-gray-300" src="https://images.unsplash.com/photo-1586880244406-556ebe35f282?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="E-commerce" srcset="" />
                     </div>
                     <div>
                         <h4 className="text-lg font-bold">E-commerce</h4>
                         <p className="mt-1">
-                        Pre-order electronics and Appliances.
+                            Pre-order electronics and Appliances.
                         </p>
                     </div>
                 </div>
                 <div className="sm:flex">
                     <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-                        <svg
-                            className="h-32 w-full sm:w-32 border border-gray-300 bg-white text-gray-300"
-                            preserveAspectRatio="none"
-                            stroke="currentColor"
-                            fill="none"
-                            viewBox="0 0 200 200"
-                            aria-hidden="true"
-                        >
-                            <path vectorEffect="non-scaling-stroke" strokeWidth={1} d="M0 0l200 200M0 200L200 0" />
-                        </svg>
+                        <img className="h-32 w-full sm:w-32 border rounded-md shadow-md hover:scale-150 transition-all duration-500 border-gray-300 bg-white text-gray-300" src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="Email" srcset="" />
                     </div>
                     <div>
                         <h4 className="text-lg font-bold">Email and Text notification </h4>
                         <p className="mt-1">
-                        We keep you updated via email and Whatsapp with the progress of your package every step of the way.
+                            We keep you updated via email and Whatsapp with the progress of your package every step of the way.
                         </p>
                     </div>
                 </div>
                 <div className="sm:flex">
                     <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-                        <svg
-                            className="h-32 w-full sm:w-32 border border-gray-300 bg-white text-gray-300"
-                            preserveAspectRatio="none"
-                            stroke="currentColor"
-                            fill="none"
-                            viewBox="0 0 200 200"
-                            aria-hidden="true"
-                        >
-                            <path vectorEffect="non-scaling-stroke" strokeWidth={1} d="M0 0l200 200M0 200L200 0" />
-                        </svg>
+                        <img className="h-32 w-full sm:w-32 border rounded-md shadow-md hover:scale-150 transition-all duration-500 border-gray-300 bg-white text-gray-300" src="https://images.unsplash.com/photo-1614267119077-51bdcbf9f77a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" alt="Credit Card" srcset="" />
                     </div>
                     <div>
                         <h4 className="text-lg font-bold">Credit Card Service </h4>
                         <p className="mt-1">
-                        Don’t ever miss out on an online deal again! If you don’t have a credit card, we’ll shop for you! Contact us for more details.
+                            Don’t ever miss out on an online deal again! If you don’t have a credit card, we’ll shop for you! Contact us for more details.
                         </p>
                     </div>
                 </div>
                 <div className="sm:flex">
                     <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-                        <svg
-                            className="h-32 w-full sm:w-32 border border-gray-300 bg-white text-gray-300"
-                            preserveAspectRatio="none"
-                            stroke="currentColor"
-                            fill="none"
-                            viewBox="0 0 200 200"
-                            aria-hidden="true"
-                        >
-                            <path vectorEffect="non-scaling-stroke" strokeWidth={1} d="M0 0l200 200M0 200L200 0" />
-                        </svg>
-                    </div>
-                    <div>
-                        <p className="mt-1">
-                        We handle the customs clearance for all your packages. If any duties or fees are charged it is added to your invoice.
-                        </p>
-                    </div>
-                </div>
-                <div className="sm:flex">
-                    <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-                        <svg
-                            className="h-32 w-full sm:w-32 border border-gray-300 bg-white text-gray-300"
-                            preserveAspectRatio="none"
-                            stroke="currentColor"
-                            fill="none"
-                            viewBox="0 0 200 200"
-                            aria-hidden="true"
-                        >
-                            <path vectorEffect="non-scaling-stroke" strokeWidth={1} d="M0 0l200 200M0 200L200 0" />
-                        </svg>
+                        <img className="h-32 w-full sm:w-32 border rounded-md shadow-md hover:scale-150 transition-all duration-500 border-gray-300 bg-white text-gray-300" src="https://img.freepik.com/free-photo/business-success-teamwork-concept-with-wooden-figures-people-side-view_176474-9270.jpg?w=900&t=st=1667575596~exp=1667576196~hmac=bb0663ec3eabd365f9b81099f53368597071a2a885ac16ef4762965ee6f7717b" alt="Credit Card" srcset="" />
                     </div>
                     <div>
                         <h4 className="text-lg font-bold">Membership </h4>
                         <p className="mt-1">
-                        Shipping membership program – referral rewards.
+                            Shipping membership program – referral rewards.
+                            We handle the customs clearance for all your packages. If any duties or fees are charged it is added to your invoice.
                         </p>
                     </div>
                 </div>
-
             </div>
         </div>
 

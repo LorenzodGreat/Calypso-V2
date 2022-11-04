@@ -7,11 +7,118 @@ import Banner from './../img/Banner.jpg';
 
 function Rates() {
     const [weightCost, setWeightCost] = useState(0)
-    const [itemCost, setItemCost] = useState(' ')
+    const [itemCost, setItemCost] = useState(0)
 
     useEffect(() => {
-
-    },[weightCost,itemCost])
+        const changeweightCost = (e) => {
+            console.log(e)
+            e.preventDefault();
+            setWeightCost(Number(e.target.value))
+    
+            if (weightCost === 0) { setItemCost(0.00) }
+            if (weightCost === 1) { setItemCost(3.95) }
+            if (weightCost === 2) { setItemCost(6.05) }
+            if (weightCost === 3) { setItemCost(7.75) }
+            if (weightCost === 4) { setItemCost(9.45) }
+            if (weightCost === 5) { setItemCost(11.15) }
+            if (weightCost === 6) { setItemCost(12.85) }
+            if (weightCost === 7) { setItemCost(14.55) }
+            if (weightCost === 8) { setItemCost(16.25) }
+            if (weightCost === 9) { setItemCost(17.95) }
+            if (weightCost === 10) { setItemCost(19.65) }
+            if (weightCost === 11) { setItemCost(21.35) }
+            if (weightCost === 12) { setItemCost(23.05) }
+            if (weightCost === 13) { setItemCost(24.75) }
+            if (weightCost === 14) { setItemCost(26.45) }
+            if (weightCost === 15) { setItemCost(28.15) }
+            if (weightCost === 16) { setItemCost(29.85) }
+            if (weightCost === 17) { setItemCost(31.55) }
+            if (weightCost === 18) { setItemCost(33.25) }
+            if (weightCost === 19) { setItemCost(34.95) }
+            if (weightCost === 20) { setItemCost(36.65) }
+            if (weightCost === 21) { setItemCost(38.35) }
+            if (weightCost === 22) { setItemCost(40.05) }
+            if (weightCost === 23) { setItemCost(41.75) }
+            if (weightCost === 24) { setItemCost(43.45) }
+            if (weightCost === 25) { setItemCost(45.15) }
+            if (weightCost === 26) { setItemCost(46.85) }
+            if (weightCost === 27) { setItemCost(48.55) }
+            if (weightCost === 28) { setItemCost(50.25) }
+            if (weightCost === 29) { setItemCost(51.95) }
+            if (weightCost === 30) { setItemCost(53.65) }
+            if (weightCost === 31) { setItemCost(55.35) }
+            if (weightCost === 32) { setItemCost(57.05) }
+            if (weightCost === 33) { setItemCost(58.75) }
+            if (weightCost === 34) { setItemCost(60.45) }
+            if (weightCost === 35) { setItemCost(62.15) }
+            if (weightCost === 36) { setItemCost(63.85) }
+            if (weightCost === 37) { setItemCost(66.55) }
+            if (weightCost === 38) { setItemCost(67.25) }
+            if (weightCost === 39) { setItemCost(68.95) }
+            if (weightCost === 40) { setItemCost(70.65) }
+            if (weightCost === 41) { setItemCost(72.35) }
+            if (weightCost === 42) { setItemCost(74.05) }
+            if (weightCost === 43) { setItemCost(75.75) }
+            if (weightCost === 44) { setItemCost(77.45) }
+            if (weightCost === 45) { setItemCost(79.15) }
+            if (weightCost === 46) { setItemCost(80.85) }
+            if (weightCost === 47) { setItemCost(82.55) }
+            if (weightCost === 48) { setItemCost(84.25) }
+            if (weightCost === 49) { setItemCost(85.95) }
+            if (weightCost === 50) { setItemCost(87.65) }
+            if (weightCost === 51) { setItemCost(89.35) }
+            if (weightCost === 52) { setItemCost(91.05) }
+            if (weightCost === 53) { setItemCost(92.75) }
+            if (weightCost === 54) { setItemCost(94.45) }
+            if (weightCost === 55) { setItemCost(96.15) }
+            if (weightCost === 56) { setItemCost(97.85) }
+            if (weightCost === 57) { setItemCost(99.55) }
+            if (weightCost === 58) { setItemCost(101.25) }
+            if (weightCost === 59) { setItemCost(102.95) }
+            if (weightCost === 60) { setItemCost(104.65) }
+            if (weightCost === 61) { setItemCost(106.35) }
+            if (weightCost === 62) { setItemCost(108.05) }
+            if (weightCost === 63) { setItemCost(109.75) }
+            if (weightCost === 64) { setItemCost(111.45) }
+            if (weightCost === 65) { setItemCost(113.15) }
+            if (weightCost === 66) { setItemCost(114.85) }
+            if (weightCost === 67) { setItemCost(116.55) }
+            if (weightCost === 68) { setItemCost(118.25) }
+            if (weightCost === 69) { setItemCost(119.95) }
+            if (weightCost === 70) { setItemCost(121.65) }
+            if (weightCost === 71) { setItemCost(123.35) }
+            if (weightCost === 72) { setItemCost(125.05) }
+            if (weightCost === 73) { setItemCost(126.75) }
+            if (weightCost === 74) { setItemCost(128.45) }
+            if (weightCost === 75) { setItemCost(130.15) }
+            if (weightCost === 76) { setItemCost(131.85) }
+            if (weightCost === 77) { setItemCost(133.55) }
+            if (weightCost === 78) { setItemCost(135.25) }
+            if (weightCost === 79) { setItemCost(136.95) }
+            if (weightCost === 80) { setItemCost(138.65) }
+            if (weightCost === 81) { setItemCost(140.35) }
+            if (weightCost === 82) { setItemCost(142.05) }
+            if (weightCost === 83) { setItemCost(143.75) }
+            if (weightCost === 84) { setItemCost(145.45) }
+            if (weightCost === 85) { setItemCost(147.15) }
+            if (weightCost === 86) { setItemCost(148.85) }
+            if (weightCost === 87) { setItemCost(150.55) }
+            if (weightCost === 88) { setItemCost(152.25) }
+            if (weightCost === 89) { setItemCost(153.95) }
+            if (weightCost === 90) { setItemCost(155.65) }
+            if (weightCost === 91) { setItemCost(157.35) }
+            if (weightCost === 92) { setItemCost(159.05) }
+            if (weightCost === 93) { setItemCost(160.75) }
+            if (weightCost === 94) { setItemCost(162.45) }
+            if (weightCost === 95) { setItemCost(164.15) }
+            if (weightCost === 96) { setItemCost(165.85) }
+            if (weightCost === 97) { setItemCost(167.55) }
+            if (weightCost === 98) { setItemCost(169.25) }
+            if (weightCost === 99) { setItemCost(170.95) }
+            if (weightCost === 100) { setItemCost(172.65) }
+            if (weightCost >= 100) { setItemCost('Contact Us Today') }
+        }
+    },[itemCost])
 
     const changeweightCost = (e) => {
         console.log(e)
@@ -200,7 +307,6 @@ function Rates() {
                                             placeholder="0.00"
                                             maxLength={4}
                                             onChange={(e) => changeweightCost(e)}
-                                            value={setWeightCost}
                                             aria-describedby="price-currency"
                                         />
 
@@ -214,7 +320,7 @@ function Rates() {
                                 <p className="mt-6 mx-auto text-center max-w-4xl text-lg text-indigo-200">
                                     Packages deemed by Customs as intended for personal use, valued in excess of $50.00 (C.I.F.) may be subject to Customs Duty Charges.
                                     Please Note: It is the Importer’s responsibility to familiarize his or herself with the most recent Customs Regulations as it relates to the policies, procedures, import requirements, duties and taxes that may be applicable to importing packages into Jamaica.
-                                </p>import { useEffect } from 'react';
+                                </p>
 
                             </div>
                         </div>
