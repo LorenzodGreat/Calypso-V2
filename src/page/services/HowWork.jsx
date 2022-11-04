@@ -1,4 +1,9 @@
 import React from 'react';
+import mail from '../../img/mail.gif'
+import write from '../../img/write.gif'
+import box from '../../img/box.gif'
+import eye from '../../img/eye.gif'
+import truck from '../../img/truck.gif'
 function HowWork() {
     return (<>
         <div>
@@ -7,16 +12,7 @@ function HowWork() {
             <div role="list" class="mt-3 grid grid-cols-1 p-4 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-2">
                 <div className="sm:flex">
                     <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-                        <svg
-                            className="h-32 w-full sm:w-32 border border-gray-300 bg-white text-gray-300"
-                            preserveAspectRatio="none"
-                            stroke="currentColor"
-                            fill="none"
-                            viewBox="0 0 200 200"
-                            aria-hidden="true"
-                        >
-                            <path vectorEffect="non-scaling-stroke" strokeWidth={1} d="M0 0l200 200M0 200L200 0" />
-                        </svg>
+                        <img src={write} alt="" srcset="" className='h-28' />
                     </div>
                     <div>
                         <h4 className="text-lg font-bold">SIGN UP </h4>
@@ -26,16 +22,7 @@ function HowWork() {
                 </div>
                 <div className="sm:flex">
                     <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-                        <svg
-                            className="h-32 w-full sm:w-32 border border-gray-300 bg-white text-gray-300"
-                            preserveAspectRatio="none"
-                            stroke="currentColor"
-                            fill="none"
-                            viewBox="0 0 200 200"
-                            aria-hidden="true"
-                        >
-                            <path vectorEffect="non-scaling-stroke" strokeWidth={1} d="M0 0l200 200M0 200L200 0" />
-                        </svg>
+                        <img src={mail} alt="" srcset="" className='h-28' />
                     </div>
                     <div>
                         <h4 className="text-lg font-bold">NOTE MAILBOX NUMBER  </h4>
@@ -45,16 +32,7 @@ function HowWork() {
                 </div>
                 <div className="sm:flex">
                     <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-                        <svg
-                            className="h-32 w-full sm:w-32 border border-gray-300 bg-white text-gray-300"
-                            preserveAspectRatio="none"
-                            stroke="currentColor"
-                            fill="none"
-                            viewBox="0 0 200 200"
-                            aria-hidden="true"
-                        >
-                            <path vectorEffect="non-scaling-stroke" strokeWidth={1} d="M0 0l200 200M0 200L200 0" />
-                        </svg>
+                        <img src={eye} alt="" srcset="" className='h-28' />
                     </div>
                     <div>
                         <h4 className="text-lg font-bold">CHECK EMAIL AND DASHBOARD </h4>
@@ -66,21 +44,12 @@ function HowWork() {
                 </div>
                 <div className="sm:flex">
                     <div className="mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
-                        <svg
-                            className="h-32 w-full sm:w-32 border border-gray-300 bg-white text-gray-300"
-                            preserveAspectRatio="none"
-                            stroke="currentColor"
-                            fill="none"
-                            viewBox="0 0 200 200"
-                            aria-hidden="true"
-                        >
-                            <path vectorEffect="non-scaling-stroke" strokeWidth={1} d="M0 0l200 200M0 200L200 0" />
-                        </svg>
+                        <img src={truck} alt="" srcset="" className='h-28' />
                     </div>
                     <div>
                         <h4 className="text-lg font-bold">DELIVER/PICKUP PACKAGE</h4>
                         <p className="mt-1">
-                        Once the item is ready for pickup you will be notified by email and dashboard or We will deliver you package to you.
+                            Once the item is ready for pickup you will be notified by email and dashboard or We will deliver you package to you.
                         </p>
                     </div>
                 </div>

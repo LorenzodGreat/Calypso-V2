@@ -22,11 +22,6 @@ function OurService() {
                             <img class="absolute inset-0 h-full w-full object-cover" src={Service1} alt="Service Image" />
                             <div class="absolute inset-0 "></div>
                             <div class="absolute inset-0 "></div>
-                            <div class="relative px-8">
-                                <div>
-                                    <img class="h-12" src="https://tailwindui.com/img/logos/workcation.svg?color=white" alt="Workcation" />
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

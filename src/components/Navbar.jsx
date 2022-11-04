@@ -45,12 +45,6 @@ const solutions = [
     href: '/Services5',
     icon: SupportIcon,
   },
-  {
-    name: 'Services',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '/Services1',
-    icon: SupportIcon,
-  },
 ]
 const resources = [
   {
