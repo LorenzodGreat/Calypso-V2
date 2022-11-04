@@ -26,7 +26,7 @@ export default function CardsCarousel() {
       <Carousel.Slide ><div className='relative'>
         <img className='w-full shadow-xl relative' src={Slide1} alt="" />
         <div className='absolute md:flex lg:flex top-20 left-8 md:top-[10rem] md:left-[9rem] lg:top-[16rem] lg:left-[9rem]'>
-          <div className='w-[25vh] sm:w-[80vh] lg:w-[80vh] md:w-[80vh] space-y-4'>
+          <div className='w-[20vh] sm:w-[80vh] lg:w-[80vh] md:w-[80vh] space-y-4'>
             <div className='h-max space-y-6'>
               <h1 className=' text-[#f9ac8d] font-semibold text-lg sm:text-6xl md:text-6xl lg:text-6xl'>Global Logistic</h1>
               <p className='text-white h-max text-[0.5rem] md:text-2xl lg:text-2xl sm:text-2xl font-base lg:pt-6'>Trusted way to transport all your goods from there to here.
@@ -61,7 +61,7 @@ export default function CardsCarousel() {
         <img className='w-full shadow-xl relative' src={Slide3} alt="" />
         <div className='absolute md:flex lg:flex top-20 left-8 md:top-[4rem] md:left-[9rem] lg:top-[16rem] lg:left-[9rem]'>
           <div className='w-[25vh] sm:w-[80vh] lg:w-[80vh] md:w-[80vh] space-y-4'>
-            <div className='h-max space-y-8'>
+            <div className='h-max space-y-2 md:space-y-8 lg:space-y-8'>
               <h1 className=' text-[#1ba0bb] font-semibold text-lg sm:text-6xl md:text-6xl lg:text-6xl'>Shop Calypso</h1>
               <p className='text-white h-max text-[0.5rem] md:text-2xl lg:text-2xl sm:text-2xl font-base'>Visit our online store for the best affordable gifts, latest electronics, appliances and more. </p>
             </div>
