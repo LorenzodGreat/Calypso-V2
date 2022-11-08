@@ -5,16 +5,20 @@ import Intro from './page/Intro';
 import Service from './page/Service';
 import React from 'react';
 import Rates from './page/Rate';
+import Errors from './error/404';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Intro />} />
+        <Route path='/:PageName' element={<Errors />} />
+        <Route path='*' element={<Errors />} />
+        <Route path='/' element={<Errors />} />
+        {/* <Route path='/' element={<Intro />} />
         <Route path='/Home' element={<Home />} />
         <Route path='/Services' element={<Service />} />
         <Route path='/About' element={<About />} />
-        <Route path='/Rate' element={<Rates />} />
+        <Route path='/Rate' element={<Rates />} /> */}
       </Routes>
     </Router>
 

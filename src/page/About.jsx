@@ -66,10 +66,6 @@ export default function About() {
 
                                         </video>
                                     </div>
-                                    <figcaption className="mt-3 flex text-sm text-gray-500">
-                                        <CameraIcon className="flex-none w-5 h-5 text-gray-400" aria-hidden="true" />
-                                        <span className="ml-2">Calypso Shipping</span>
-                                    </figcaption>
                                 </figure>
                             </div>
                         </div>

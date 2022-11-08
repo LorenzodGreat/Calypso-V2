@@ -12,14 +12,14 @@ function classNames(...classes) {
 export default function ServiceList({Services}) {
   return (
     <div >
-      <Menu as="div" className="relative inline-block text-left  ">
+      <Menu as="div" className="hover:text-amber-400 inline-block text-left  ">
         <div>
           <Menu.Button className={{ Services }}>
           <span>Services
 
                     <ChevronDownIcon
                       className={classNames(
-                        'h-5 absolute top-1 -right-6'
+                        'h-5 absolute top-11'
                         )}
                         aria-hidden="true"
                         />
