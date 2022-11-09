@@ -12,38 +12,40 @@ import {
 } from '@heroicons/react/outline'
 import { useState } from 'react';
 import ServiceList from './Services';
+import ExtraList from './Extras';
+import { LinkIcon,BanIcon,UserIcon,ZoomInIcon,QuestionMarkCircleIcon,TagIcon } from '@heroicons/react/solid';
 
 const solutions = [
   {
     name: 'Our Services',
     description: 'Get a better understanding of what we do.',
-    href: '/Services',
-    icon: SupportIcon,
+    href: '/services',
+    icon: LinkIcon,
   },
   {
-    name: 'Items not acceptable for Carriage',
+    name: 'Items Not Acceptable For Carriage',
     description: 'Learn about what you can ship in.',
-    href: '/Services1',
-    icon: SupportIcon,
+    href: '/services/items',
+    icon: BanIcon,
   },
   {
-    name: 'Customer’s obligations:',
+    name: 'Customer’s Obligations:',
     description: 'Speak directly to  customers requirements for getting their packages.',
-    href: '/Services2',
-    icon: SupportIcon,
+    href: '/services/customers',
+    icon: UserIcon,
   },
-  { name: 'Inspection', description: "Your customers' data will be safe and secure.", href: '/Services3', icon: SupportIcon },
+  { name: 'Inspection', description: "Your customers' data will be safe and secure.", href: '/services/inspection', icon: ZoomInIcon },
   {
-    name: 'Collection/Delivery of packages',
+    name: 'Collection/Delivery Of Packages',
     description: "Connect with third-party tools that you're already using.",
-    href: '/Services4',
-    icon: SupportIcon,
+    href: '/services/collection',
+    icon: TagIcon,
   },
   {
-    name: 'Procedure for Claims in case of loss or damage to packages',
+    name: 'Procedure For Claims In Case Of Loss Or Damage To Packages',
     description: 'Collecting lost packages needed',
-    href: '/Services5',
-    icon: SupportIcon,
+    href: '/services/procedure',
+    icon: QuestionMarkCircleIcon,
   },
 ]
 const resources = [
@@ -56,14 +58,8 @@ const resources = [
   {
     name: 'About',
     description: 'Learn how to maximize our platform to get the most out of it.',
-    href: '/About',
+    href: '/about',
     icon: SupportIcon,
-  },
-  {
-    name: 'Login',
-    description: 'See what meet-ups and other events we might be planning near you.',
-    href: '#',
-    icon: CalendarIcon,
   },
 ]
 
@@ -89,7 +85,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="/Home">
+            <a href="/home">
               <span className="sr-only">Calypso</span>
               <img
                 width={100}
@@ -107,19 +103,18 @@ export default function Navbar() {
           </div>
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
 
-            <a href="/Home" className={color ? 'text-sm font-medium font-sans hover:text-amber-400' : 'text-base font-medium  hover:text-amber-400'}>
+            <a href="/home" className={color ? 'text-sm font-medium font-sans hover:text-amber-400' : 'text-base font-medium  hover:text-amber-400'}>
               Home
             </a>
-            <ServiceList Services={color ? "text-sm inline-flex font-semibold font-sans hover:text-amber-400" : "text-base inline-flex font-semibold font-sans hover:text-amber-400"} />
-            <a href="/Rate" className={color ? "text-sm font-medium font-sans hover:text-amber-400" : "text-md font-medium font-sans hover:text-amber-400"}>
+            <a href="/rate" className={color ? "text-sm font-medium font-sans hover:text-amber-400" : "text-md font-medium font-sans hover:text-amber-400"}>
               Rate Calculator
             </a>
-            <a href="/About" className={color ? "text-sm font-medium font-sans hover:text-amber-400" : "text-md font-medium font-sans hover:text-amber-400"}>
-              About Us
+            <ServiceList Services={color ? "text-sm inline-flex font-semibold font-sans hover:text-amber-400" : "text-base inline-flex font-semibold font-sans hover:text-amber-400"} />
+            <ExtraList Services={color ? "text-sm inline-flex font-semibold font-sans hover:text-amber-400" : "text-base inline-flex font-semibold font-sans hover:text-amber-400"} />
+            <a href="/shop" className={color ? "text-sm font-medium font-sans hover:text-amber-400" : "text-md font-medium font-sans hover:text-amber-400"}>
+            Shop Calypso
             </a>
-            <a href="#" className={color ? "text-sm font-medium font-sans hover:text-amber-400" : "text-md font-medium font-sans hover:text-amber-400"}>
-              Shop Calypso
-            </a>
+
 
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
@@ -180,7 +175,7 @@ export default function Navbar() {
             </div>
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a href="/Home" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                <a href="/home" className="text-base font-medium text-gray-900 hover:text-gray-700">
                   Home
                 </a>
 

@@ -5,19 +5,19 @@ import Calypso from '../img/Calypso.png'; // Tell webpack this JS file uses this
 const navigation = {
   solutions: [
     { name: 'Tele: +1 (876) 791-9541' },
-    { name: 'Email:  info@calypsoshipping.com' },
+    { name: 'Email:info@calypsoshipping.com' },
     { name: 'Kingston, Jamaica' },
   ],
   company: [
-    { name: 'About', href: '/About' },
-    { name: 'Services', href: '/Services' },
-    { name: 'Rates', href: '/Rate' },
-    { name: 'Shop', href: '/Shop' },
+    { name: 'About', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Rates', href: '/rate' },
+    { name: 'Shop', href: '/shop' },
   ],
   legal: [
-    { name: 'Claims', href: '/Claims' },
-    { name: 'Privacy', href: '/Privacy' },
-    { name: 'Terms', href: '/Terms' },
+    { name: 'Claims', href: '/services/procedure' },
+    { name: 'Privacy', href: '/privacy' },
+    { name: 'Terms', href: '/terms' },
   ],
   social: [
     {
@@ -46,26 +46,26 @@ const navigation = {
         </svg>
       ),
     },
-    // {
-    //   name: 'Whatsapp',
-    //   href: '/+1 (876) 791-9541',
-    //   icon: (props) => (
-    //     <i class="fa-brands fa-whatsapp -mt-4 text-2xl"></i>
-    //   ),
-    // },
     {
-      name: 'GitHub',
-      href: '#',
+      name: 'Whatsapp',
+      href: '/+1 (876) 791-9541',
       icon: (props) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path
-            fillRule="evenodd"
-            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-            clipRule="evenodd"
-          />
-        </svg>
+        <i class="fa-brands fa-whatsapp -mt-4 text-2xl"></i>
       ),
     },
+    // {
+    //   name: 'GitHub',
+    //   href: '#',
+    //   icon: (props) => (
+    //     <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
+    //       <path
+    //         fillRule="evenodd"
+    //         d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+    //         clipRule="evenodd"
+    //       />
+    //     </svg>
+    //   ),
+    // },
   ],
 }
 
@@ -76,9 +76,9 @@ export default function Foot() {
         Footer
       </h2>
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="pb-8 xl:grid xl:grid-cols-4 xl:gap-8">
+        <div className="pb-8 xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="grid grid-cols-2 gap-8 xl:col-span-4">
-         
+
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold text-[#17bfe0] tracking-wider uppercase">Company</h3>
@@ -105,17 +105,17 @@ export default function Foot() {
                 </ul>
               </div>
             </div>
-              <div>
-                <h3 className="text-sm font-semibold text-[#17bfe0] tracking-wider uppercase">Contact</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.solutions.map((item) => (
-                    <li key={item.name}>
-                      <h1 className="text-base text-gray-100 hover:text-white">
-                        {item.name}
-                      </h1>
-                    </li>
-                  ))}
-                </ul>
+            <div className='w-max'>
+              <h3 className="text-sm font-semibold text-[#17bfe0] tracking-wider uppercase">Contact</h3>
+              <ul role="list" className="mt-4 space-y-4">
+                {navigation.solutions.map((item) => (
+                  <li key={item.name}>
+                    <h1 className="md:text-base lg:text-base text-xs text-gray-100 hover:text-white">
+                      {item.name}
+                    </h1>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
@@ -151,10 +151,10 @@ export default function Foot() {
             </div>
           </form>
         </div>
-        <div className="mt-8 p-6 border-t bg-white rounded-lg shadow-lg content-center  pt-8 md:flex md:items-center md:justify-between">
+        <div className="mt-8 p-6 border-t bg-white rounded-lg shadow-lg content-center pt-8 md:flex md:items-center md:justify-between">
           <span className="sr-only">Calypso</span>
           <img
-            className="h-20 w-auto md:mx-0 lg:mx-0 mx-auto my-6 sm:h-10"
+            className="h-24 w-auto md:mx-0 lg:mx-0 mx-auto my-6 sm:h-10"
             width={200}
             height={148}
             src={Calypso}

@@ -6,7 +6,7 @@ import eye from '../../img/eye.gif'
 import truck from '../../img/truck.gif'
 function HowWork() {
     return (<>
-        <div>
+        <div >
             <h2 class="text-3xl my-6 text-gray-900 font-extrabold tracking-tight sm:text-4xl text-center">With Just Four(4) Easy Steps Start Shopping Today</h2>
 
                 <div class="lg:mx-auto lg:max-w-3xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 gap-2 lg:items-start">

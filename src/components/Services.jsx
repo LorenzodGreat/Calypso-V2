@@ -1,30 +1,31 @@
 import { Menu, Transition } from '@headlessui/react'
-import { Fragment, useEffect, useRef, useState } from 'react'
+import { Fragment} from 'react'
 import {
   SupportIcon,
   ChevronDownIcon,
 } from '@heroicons/react/outline'
+import { BanIcon, LinkIcon, QuestionMarkCircleIcon, TagIcon, UserIcon, ZoomInIcon } from '@heroicons/react/solid'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function ServiceList({Services}) {
+export default function ServiceList({ Services }) {
   return (
     <div >
-      <Menu as="div" className="hover:text-amber-400 inline-block text-left  ">
+      <Menu as="div" className="hover:text-amber-400 relative inline-block text-left  ">
         <div>
           <Menu.Button className={{ Services }}>
-          <span>Services
+            <span className="flex">Services
 
-                    <ChevronDownIcon
-                      className={classNames(
-                        'h-5 absolute top-11'
-                        )}
-                        aria-hidden="true"
-                        />
-                        </span>
-                    
+              <ChevronDownIcon
+                className={classNames(
+                  'h-5'
+                )}
+                aria-hidden="true"
+              />
+            </span>
+
           </Menu.Button>
         </div>
         <Transition
@@ -41,17 +42,16 @@ export default function ServiceList({Services}) {
               <Menu.Item>
                 {({ active }) => (
                   <a
-                    href='/Services' className={`${
-                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                    href='/Services' className={`${active ? 'bg-amber-500 text-white' : 'text-gray-900'
+                      } group flex w-full items-center rounded-md px-2 py-2 text-sm font-bold`}
                   >
                     {active ? (
-                      <SupportIcon
+                      <LinkIcon
                         className="mr-2 h-5 w-5"
                         aria-hidden="true"
                       />
                     ) : (
-                      <SupportIcon
+                      <LinkIcon
                         className="mr-2 h-5 w-5"
                         aria-hidden="true"
                       />
@@ -63,110 +63,105 @@ export default function ServiceList({Services}) {
               <Menu.Item>
                 {({ active }) => (
                   <a
-                    href='/Services' className={`${
-                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                    href='/services/items' className={`${active ? 'bg-amber-500 text-white' : 'text-gray-900'
+                      } group flex w-full items-center rounded-md px-2 py-2 text-sm font-bold`}
                   >
                     {active ? (
-                      <SupportIcon
+                      <BanIcon
                         className="mr-2 h-5 w-5"
                         aria-hidden="true"
                       />
                     ) : (
-                      <SupportIcon
+                      <BanIcon
                         className="mr-2 h-5 w-5"
                         aria-hidden="true"
                       />
                     )}
-                    Items not acceptable for Carriage
+                    Items Not Acceptable For Carriage
                   </a>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
                   <a
-                    href='/Services' className={`${
-                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                    href='/services/customers' className={`${active ? 'bg-amber-500 text-white' : 'text-gray-900'
+                      } group flex w-full items-center rounded-md px-2 py-2 text-sm font-bold`}
                   >
                     {active ? (
-                      <SupportIcon
+                      <UserIcon
                         className="mr-2 h-5 w-5"
                         aria-hidden="true"
                       />
                     ) : (
-                      <SupportIcon
+                      <UserIcon
                         className="mr-2 h-5 w-5"
                         aria-hidden="true"
                       />
                     )}
-                    Customer’s obligations:
+                    Customer’s Obligations
                   </a>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
                   <a
-                    href='/Services' className={`${
-                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                    href='/services/inspection' className={`${active ? 'bg-amber-500 text-white' : 'text-gray-900'
+                      } group flex w-full items-center rounded-md px-2 py-2 text-sm font-bold`}
                   >
                     {active ? (
-                      <SupportIcon
+                      <ZoomInIcon
                         className="mr-2 h-5 w-5"
                         aria-hidden="true"
                       />
                     ) : (
-                      <SupportIcon
+                      <ZoomInIcon
                         className="mr-2 h-5 w-5"
                         aria-hidden="true"
                       />
                     )}
-                    Inspection 
+                    Inspection
                   </a>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
                   <a
-                    href='/Services' className={`${
-                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                    href='/services/collection' className={`${active ? 'bg-amber-500 text-white' : 'text-gray-900'
+                      } group flex w-full items-center rounded-md px-2 py-2 text-sm font-bold`}
                   >
                     {active ? (
-                      <SupportIcon
+                      <TagIcon
                         className="mr-2 h-5 w-5"
                         aria-hidden="true"
                       />
                     ) : (
-                      <SupportIcon
+                      <TagIcon
                         className="mr-2 h-5 w-5"
                         aria-hidden="true"
                       />
                     )}
-                    Collection/Delivery of packages
+                    Collection/Delivery Of Packages
                   </a>
                 )}
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
                   <a
-                    href='/Services' className={`${
-                      active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                    href='/services/procedure' className={`${active ? 'bg-amber-500 text-white' : 'text-gray-900'
+                      } group flex w-full items-center rounded-md px-2 py-2 text-sm font-bold`}
                   >
                     {active ? (
-                      <SupportIcon
+                      <QuestionMarkCircleIcon
                         className="mr-2 h-5 w-5"
                         aria-hidden="true"
                       />
                     ) : (
-                      <SupportIcon
+                      <QuestionMarkCircleIcon
                         className="mr-2 h-5 w-5"
                         aria-hidden="true"
                       />
                     )}
-                    Procedure for claims in case of loss or damage to packages
+                    Procedure For Claims In Case Of Loss Or Damage To Packages
                   </a>
                 )}
               </Menu.Item>
