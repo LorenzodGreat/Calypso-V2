@@ -48,7 +48,7 @@ const navigation = {
     },
     {
       name: 'Whatsapp',
-      href: '/+1 (876) 791-9541',
+      href: 'https://wa.me/message/ZL3ZQAU4RDMWA1?src=qr',
       icon: (props) => (
         <i class="fa-brands fa-whatsapp -mt-4 text-2xl"></i>
       ),
@@ -162,7 +162,7 @@ export default function Foot() {
           />
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
-              <a key={item.name} href={item.href} className="text-[#593196b0] hover:text-gray-900">
+              <a key={item.name} target="_blank" href={item.href} className="text-[#593196b0] hover:text-gray-900">
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </a>

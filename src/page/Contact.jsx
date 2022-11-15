@@ -219,7 +219,9 @@ export default function Contact() {
                                                 </li>
                                                 <li>
                                                     <span className="sr-only">Whatsapp</span>
+                                                    <a href="https://wa.me/message/ZL3ZQAU4RDMWA1?src=qr" target="_blank" rel="noopener noreferrer">
                                                     <i class="fa-brands text-indigo-200 hover:text-indigo-100 fa-whatsapp -mt-1 text-2xl"></i>
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </div>
