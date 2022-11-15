@@ -92,11 +92,29 @@ export default function About() {
                                         </div>
                                         <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                                             <p>
-                                                We are passionate about serving you as we stand to provide you with the full transparency, immaculate customer service and most of all reliable shipping. We seek to incorporate industry best practices at all times and always incorporate and utilize the latest technology and other resources to ensure we deliver above and beyond our customers’ expectations.
+                                                Calypso Shipping is a global freight forwarding service with our prime location situated in Jamaica. Our service used Air and Sea Freight to move our cargos. We provide the solution for online shoppers whether for individuals or businesses. Our platform allows businesses, persons shopping online or persons who have family and friends overseas with the ability to utilise our service in order to receive their package(s) in Jamaica. Feel secure when you ship your goods to our secured location in Miami, Florida. With further consideration, we also facilitate persons who do not have a credit card but want to shop online with the option to do so using Calypso Assist Credit Card*. Additionally, we provide you with free* deliver service islandwide once your package arrives in Jamaica.
+
+                                                <br /><br />Calypso Shipping continues to make your experience exceptional by taking away the hassle of dealing with customs clearance out of your hands, so you may shop, and ship, while we take care of the rest promptly and efficiently.
+
+                                                <br /><br />With over 10 years combined in the field of customer service, logistics and customs clearance, our experience is what sets us apart from the other conventional companies in this field. There is no shipment that we cannot handle and once you have made Calypso Shipping your only choice, our guarantee is that you will receive your package in a timely manner, at the most affordable rates. Calypso Shipping is aware of your desire for the best and we intend on providing exceptional customer service, delivery time, reliability, efficiency, communication and lastly our affordable rate that is second to none.
+
+                                                <br /><br />Once again, our customers are our #1 priority and we aim to please you. Thank you for making the best choice.
+
                                             </p>
-                                            <p>
-                                                Being owners and users of the same service, we provide, we are not separated from the concerns and queries that arise.
+                                            <p className='text-red-600'>
+                                                <b className='text-black'>Why choose us:</b>
+                                                <br></br><br></br>◦	Our years of experience in the logistics and customs clearance
+                                                <br></br><br></br>◦	Earn while you ship through our referral or membership program
+                                                <br></br><br></br>◦	We have a team that provides that is ready to provide you with your most exceptional Customer Service experience
+                                                <br></br><br></br>◦	We provide persons who do not own or prefer not to use their debit or credit card with our Calypso Assist by using our card to make any purchase for you.
+                                                <br></br><br></br>◦	You will have access to goods to purchase through our own online store with the most unbeatable rates.
+                                                <br></br><br></br>◦	We are reliable
+                                                <br></br><br></br>◦	We are cost effective
+                                                <br></br><br></br>◦	Our delivery time is unmatched*
+                                                <br></br><br></br>◦	We provide free delivery islandwide*
+
                                             </p>
+
                                         </div>
                                     </div>
                                 </div>

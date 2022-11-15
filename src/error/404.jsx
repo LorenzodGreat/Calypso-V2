@@ -1,3 +1,4 @@
+import React from 'react';
 import Calypso from '../img/Calypso.png'; // Tell webpack this JS file uses this image
 export default function Errors() {
   return (

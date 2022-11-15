@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, useEffect } from 'react'
 import Load from './../components/loading';
 import Navbar from '../components/Navbar';

@@ -10,9 +10,9 @@ const navigation = {
   ],
   company: [
     { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
     { name: 'Rates', href: '/rate' },
     { name: 'Shop', href: '/shop' },
+    { name: 'Faq', href: '/faq' },
   ],
   legal: [
     { name: 'Claims', href: '/services/procedure' },

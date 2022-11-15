@@ -1,3 +1,4 @@
+import React from 'react';
 import '../load.css'
 // import Calypso from '../img/Calypso.png'
 function Load() {

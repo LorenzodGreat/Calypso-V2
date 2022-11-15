@@ -15,7 +15,9 @@ import CDOP from './page/serviceList/CDOP';
 import PFC from './page/serviceList/PFC';
 import Private from './page/Privacy';
 import Terms from './page/Terms';
+import Faq from './page/Faq';
 import Fix from './error/Fix';
+import Layout from './page/admin/layout';
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
       <Routes>
         <Route path='/:PageName' element={<Errors />} />
         <Route path='*' element={<Errors />} />
+        <Route path='//admin-portal/dashboard' element={<Layout />} />
         <Route path='/' element={<Intro />} />
         <Route path='/home' element={<Home />} />
         <Route path='/shop' element={<Fix />} />
@@ -30,6 +33,7 @@ function App() {
         <Route path='/feeds' element={<Fix />} />
         <Route path='/about' element={<About />} />
         <Route path='/terms' element={<Terms />} />
+        <Route path='/faq' element={<Faq />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/privacy' element={<Private />} />
         <Route path='/services' element={<Service />} />
