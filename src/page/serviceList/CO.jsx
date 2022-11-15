@@ -27,7 +27,7 @@ export default function CO() {
                             <Navbar />
                         </div>
 
-                        <div className='max-w-prose px-4 py-32 md:py-32 lg:py-32'>
+                        <div className='px-4 w-full py-32 md:py-32 lg:py-32'>
 
                             <div className="text-lg py-6 mx-auto">
                                 <h1>

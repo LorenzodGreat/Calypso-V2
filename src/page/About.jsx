@@ -73,8 +73,7 @@ export default function About() {
                                                         alt="Calypso company video"
                                                         width={1184}
                                                         height={1376}
-                                                        muted
-                                                        loop
+                                                        controls
                                                         autoPlay
                                                         playsInline
                                                     >

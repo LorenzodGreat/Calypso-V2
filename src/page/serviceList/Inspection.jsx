@@ -28,7 +28,7 @@ export default function Inspection() {
                             <Navbar />
                         </div>
 
-                        <div className=' py-32 md:py-32 lg:py-32'>
+                        <div className=' w-full py-32 md:py-32 lg:py-32'>
 
                             <div className="text-lg py-6 mx-auto">
                                 <h1>

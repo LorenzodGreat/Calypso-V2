@@ -13,52 +13,51 @@ import {
 import { useState } from 'react';
 import ServiceList from './Services';
 import ExtraList from './Extras';
-import { LinkIcon,BanIcon,UserIcon,ZoomInIcon,QuestionMarkCircleIcon,TagIcon } from '@heroicons/react/solid';
+import { LinkIcon,BanIcon,UserIcon,ZoomInIcon,QuestionMarkCircleIcon,TagIcon, HomeIcon, BookOpenIcon } from '@heroicons/react/solid';
 
 const solutions = [
   {
-    name: 'Our Services',
-    description: 'Get a better understanding of what we do.',
-    href: '/services',
-    icon: LinkIcon,
-  },
-  {
-    name: 'Items Not Acceptable For Carriage',
-    description: 'Learn about what you can ship in.',
-    href: '/services/items',
-    icon: BanIcon,
-  },
-  {
-    name: 'Customer’s Obligations:',
-    description: 'Speak directly to  customers requirements for getting their packages.',
-    href: '/services/customers',
-    icon: UserIcon,
-  },
-  { name: 'Inspection', description: "Your customers' data will be safe and secure.", href: '/services/inspection', icon: ZoomInIcon },
-  {
-    name: 'Collection/Delivery Of Packages',
-    description: "Connect with third-party tools that you're already using.",
-    href: '/services/collection',
-    icon: TagIcon,
-  },
-  {
-    name: 'Procedure For Claims In Case Of Loss Or Damage To Packages',
-    description: 'Collecting lost packages needed',
-    href: '/services/procedure',
-    icon: QuestionMarkCircleIcon,
-  },
-]
-const resources = [
-  {
-    name: 'Rate Calculator',
+    name: 'Home',
     description: 'Get all of your questions answered in our forums or contact support.',
-    href: '/Rate',
-    icon: CalculatorIcon,
+    href: '/home',
+    icon: HomeIcon,
   },
   {
     name: 'About',
     description: 'Learn how to maximize our platform to get the most out of it.',
     href: '/about',
+    icon: QuestionMarkCircleIcon,
+  },
+  {
+    name: 'Rate Calculator',
+    description: 'Get all of your questions answered in our forums or contact support.',
+    href: '/rate',
+    icon: CalculatorIcon,
+  },
+  {
+    name: 'Contact',
+    description: 'Learn how to maximize our platform to get the most out of it.',
+    href: '/contact',
+    icon: BookOpenIcon,
+  },
+  {
+    name: 'Shop',
+    description: 'Learn how to maximize our platform to get the most out of it.',
+    href: '/shop',
+    icon: TagIcon,
+  },
+]
+const resources = [
+  {
+    name: 'Terms',
+    description: 'Get all of your questions answered in our forums or contact support.',
+    href: '/terms',
+    icon: ShieldCheckIcon,
+  },
+  {
+    name: 'Claims',
+    description: 'Learn how to maximize our platform to get the most out of it.',
+    href: '/claims',
     icon: SupportIcon,
   },
 ]
@@ -106,10 +105,12 @@ export default function Navbar() {
             <a href="/home" className={color ? 'text-sm font-medium font-sans hover:text-amber-400' : 'text-base font-medium  hover:text-amber-400'}>
               Home
             </a>
+            <a href="/services" className={color ? "text-sm font-medium font-sans hover:text-amber-400" : "text-md font-medium font-sans hover:text-amber-400"}>
+              Our Services
+            </a>
             <a href="/rate" className={color ? "text-sm font-medium font-sans hover:text-amber-400" : "text-md font-medium font-sans hover:text-amber-400"}>
               Rate Calculator
             </a>
-            <ServiceList Services={color ? "text-sm inline-flex font-semibold font-sans hover:text-amber-400" : "text-base inline-flex font-semibold font-sans hover:text-amber-400"} />
             <ExtraList Services={color ? "text-sm inline-flex font-semibold font-sans hover:text-amber-400" : "text-base inline-flex font-semibold font-sans hover:text-amber-400"} />
             <a href="/shop" className={color ? "text-sm font-medium font-sans hover:text-amber-400" : "text-md font-medium font-sans hover:text-amber-400"}>
             Shop Calypso
@@ -175,8 +176,8 @@ export default function Navbar() {
             </div>
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a href="/home" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Home
+                <a href="/services" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  Services
                 </a>
 
                 <a href="/Shop" className="text-base font-medium text-gray-900 hover:text-gray-700">

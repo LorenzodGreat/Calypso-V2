@@ -28,7 +28,7 @@ export default function PFC() {
                             <Navbar />
                         </div>
 
-                        <div className=' py-32 md:py-32 w-full lg:py-32'>
+                        <div className='py-32 md:py-32 w-full lg:py-32'>
 
                             <div className="text-lg w-full py-6 mx-auto">
                                 <h1>

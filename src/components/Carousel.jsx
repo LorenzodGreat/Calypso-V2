@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 import { Carousel } from '@mantine/carousel';
 import Low from '../img/low.png'
+import Lowrate from '../img/lowrate.png'
 import Slide1 from '../img/slide1.jpg'
 import Slide2 from '../img/slide2.jpg'
 import Slide3 from '../img/slide3.jpg'
@@ -43,11 +44,12 @@ export default function CardsCarousel() {
         <img className='w-full shadow-xl relative' src={Slide2} alt="" />
         <div className='absolute md:flex lg:flex top-20 left-8 md:top-[4rem] md:left-[9rem] lg:top-[4rem] lg:left-[9rem]'>
           <div className='w-[25vh] sm:w-[80vh] lg:w-[80vh] md:w-[80vh] space-y-4'>
-            <div>
+            <div className='md:flex lg:flex flex'>
               <img src={Low} className="w-[8vh] md:block lg:block sm:w-[50vh] md:w-[50vh] lg:w-[50vh]" alt="opps" />
+              <img src={Lowrate} className="w-[4vh] h-[4vh] ml-6 md:block lg:block sm:h-[30vh] md:h-[30vh] lg:h-[30vh] sm:w-[30vh] md:w-[30vh] lg:w-[30vh]" alt="opps" />
             </div>
             <div className='h-max'>
-              <p className='text-white h-max text-[0.5rem] md:text-2xl lg:text-2xl sm:text-2xl font-base'>Introductory rate low rate of <span className='font-bold text-yellow-600'>$3.50USD</span> Register today and receive 15% off your first shipment.</p>
+              <p className='text-white h-max text-[0.5rem] md:text-2xl lg:text-2xl sm:text-2xl font-base'>Register today and receive 15% off your first shipment.</p>
             </div>
             <div className='flex lg:space-x-8 md:space-x-8 sm:space-x-8 space-x-4'>
               <button className='text-white font-semibold w-[10vh] sm:w-[50vh] md:w-[50vh] lg:w-[50vh] text-[0.45rem] sm:text-base md:text-base lg:text-base  bg-gradient-to-tr from-[#f42888] via-[#c831bb87] to-[#8010f8] hover:scale-125 transition-all duration-300 hover:bg-[#8010f8] md:px-4 md:py-2 sm:px-4 sm:py-2 lg:px-4 lg:py-2 rounded-full border ring ring-[#8010f8]'><a href="/Rates">See Rates</a></button>
