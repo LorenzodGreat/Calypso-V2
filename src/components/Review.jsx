@@ -18,14 +18,14 @@ function Reviews() {
             <div class="p-6">
                 <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="blog"/>
                 <div class="inline-flex justify-between w-full">
-                    <h1 class="mb-8 text-xl font-semibold leading-none tracking-tighter text-neutral-600">Sarah</h1>
+                    <h1 class="mb-8 text-xl font-semibold leading-none tracking-tighter text-neutral-600">Kimmy</h1>
                 </div>
                 <p class="mx-auto text-base font-medium leading-relaxed text-gray-500">I got my outfit on time thanks to you Calypso.</p>
             </div>
             <div class="p-6">
                 <img class="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl" src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="blog"/>
                 <div class="inline-flex justify-between w-full">
-                    <h1 class="mb-8 text-xl font-semibold leading-none tracking-tighter text-neutral-600">Luke</h1>
+                    <h1 class="mb-8 text-xl font-semibold leading-none tracking-tighter text-neutral-600">Paul</h1>
                 </div>
                 <p class="mx-auto text-base font-medium leading-relaxed text-gray-500">Well I never really liked the idea of shopping online but thanks to Calypso shipping and I dont mind.</p>
             </div>
