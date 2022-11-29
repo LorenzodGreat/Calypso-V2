@@ -163,10 +163,6 @@ export default function Contact() {
                                                 </svg>
                                             </div>
                                             <h3 className="text-lg font-medium text-white">Contact information</h3>
-                                            <p className="mt-6 text-base text-indigo-50 max-w-3xl">
-                                                Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor
-                                                lacus arcu.
-                                            </p>
                                             <dl className="mt-8 space-y-6">
                                                 <dt>
                                                     <span className="sr-only">Phone number</span>
@@ -185,7 +181,7 @@ export default function Contact() {
                                             </dl>
                                             <ul role="list" className="mt-8 flex space-x-12">
                                                 <li>
-                                                    <a className="text-indigo-200 hover:text-indigo-100" href="https://www.facebook.com/profile.php?id=100086224426556">
+                                                    <a className="text-indigo-200 hover:text-sky-300" href="https://www.facebook.com/profile.php?id=100086224426556">
                                                         <span className="sr-only">Facebook</span>
                                                         <svg
                                                             width={24}
@@ -204,7 +200,7 @@ export default function Contact() {
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a className="text-indigo-200 hover:text-indigo-100" href="https://instagram.com/calypsoshipping?igshid=YmMyMTA2M2Y=">
+                                                    <a className="text-indigo-200 hover:text-sky-300" href="https://instagram.com/calypsoshipping?igshid=YmMyMTA2M2Y=">
                                                         <span className="sr-only">Instagram</span>
                                                         <svg fill="currentColor" viewBox="0 0 24 24"
                                                             width={24}
@@ -220,7 +216,7 @@ export default function Contact() {
                                                 <li>
                                                     <span className="sr-only">Whatsapp</span>
                                                     <a href="https://wa.me/message/ZL3ZQAU4RDMWA1?src=qr" target="_blank" rel="noopener noreferrer">
-                                                    <i class="fa-brands text-indigo-200 hover:text-indigo-100 fa-whatsapp -mt-1 text-2xl"></i>
+                                                        <i class="fa-brands text-indigo-200 hover:text-sky-300 fa-whatsapp -mt-1 text-2xl"></i>
                                                     </a>
                                                 </li>
                                             </ul>
