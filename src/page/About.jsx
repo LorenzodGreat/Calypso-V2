@@ -85,11 +85,7 @@ export default function About() {
                                         </div>
                                     </div>
                                     <div className="mt-8 lg:mt-0">
-                                        <div className="text-base max-w-prose mx-auto lg:max-w-none">
-                                            <p className="text-lg text-gray-500">
-                                                Calypso Shipping family-oriented business formed to make online shopping and shipping to Jamaica a happy and hassle-free experience.
-                                            </p>
-                                        </div>
+                                        
                                         <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                                             <p>
                                                 Calypso Shipping is a global freight forwarding service with our prime location situated in Jamaica. Our service used Air and Sea Freight to move our cargos. We provide the solution for online shoppers whether for individuals or businesses. Our platform allows businesses, persons shopping online or persons who have family and friends overseas with the ability to utilise our service in order to receive their package(s) in Jamaica. Feel secure when you ship your goods to our secured location in Miami, Florida. With further consideration, we also facilitate persons who do not have a credit card but want to shop online with the option to do so using Calypso Assist Credit Card*. Additionally, we provide you with free* deliver service islandwide once your package arrives in Jamaica.
