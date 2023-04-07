@@ -9,18 +9,24 @@ import moment from 'moment';
 import MainNav from '../../Components/MainNav';
 import MainFoot from '../../Components/MainFoot';
 import Load from '../../components/loading';
+import { useState } from 'react';
 
 const Blog = () => {
     const { feeds, Data, fetchFeeds, loading, removeSection, postsPerPage, handlePageChange, currentPage } = useContext(FeedContext);
+    const [loader, setLoading] = useState(false)
 
     useEffect(() => {
         fetchFeeds();
+        setLoading(true)
+        setTimeout(() => {
+            setLoading(false)
+        }, 2000);
     }, []);
 
     return (
         <>
             {
-                loading ?
+                loader ?
                     <Load />
                     :
                     <>
@@ -42,23 +48,38 @@ const Blog = () => {
                                 : (
                                     feeds.length == 0 ?
                                         (
-                                            < section className="text-center max-w-5xl mx-auto py-28 px-6">
-                                                <div class="rounded-md bg-[#270657] p-4">
-                                                    <div class="flex">
-                                                        <div class="ml-3">
-                                                            <div class="mx-auto text-center w-max">
-                                                                <svg class="h-12 w-12 bg-white p-1 rounded-full text-[#270657]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                                                                </svg>
+                                            <header class="bg-white ">
+                                                <nav class="border-t-4 border-blue-500">
+                                                    <div class="container flex items-center justify-between px-6 py-3 mx-auto">
+                                                        <a href="#">
+                                                            <img class="w-auto h-6 sm:h-7" src="https://merakiui.com/images/full-logo.svg" alt="" />
+                                                        </a>
+
+                                                        <a class="my-1 text-sm font-medium text-gray-500 rtl:-scale-x-100 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 lg:mx-4 lg:my-0" href="#">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 20 20" fill="currentColor">
+                                                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </nav>
+
+                                                <div class="container px-6 py-16 mx-auto">
+                                                    <div class="items-center lg:flex">
+                                                        <div class="w-full lg:w-1/2">
+                                                            <div class="lg:max-w-lg">
+                                                                <h1 class="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">Opp, looks like there's no <span class="text-blue-500">News Update</span></h1>
+
+                                                                <p class="mt-3 text-gray-600 dark:text-gray-400">Never miss the latest news and updates here at <span class="font-medium text-blue-500">Calypso</span> come back later for an update</p>
+
                                                             </div>
-                                                            <h3 class="text-lg font-medium text-white">Welcome to our blog section!</h3>
-                                                            <div class="mt-2 text-2xl text-white">
-                                                                <p>Unfortunately, we don't have any posts to share with you at the moment. Our team is working hard to create exciting and informative content, so please check back soon for updates. Thank you for your patience and understanding.</p>
-                                                            </div>
+                                                        </div>
+
+                                                        <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
+                                                            <img class="w-full h-full max-w-md" src="https://merakiui.com/images/components/Email-campaign-bro.svg" alt="email illustration vector art" />
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </section>
+                                            </header>
                                         )
                                         :
                                         (

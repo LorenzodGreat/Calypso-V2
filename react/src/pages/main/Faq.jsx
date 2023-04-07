@@ -80,11 +80,11 @@ export default function Faq() {
                                 </div>
                                 <div>
                                     <dt class="text-base font-medium text-gray-900">Q. Are all imported packages opened? And why?</dt>
-                                    <dd class="mt-3 text-sm text-red-400">A.  There are cases where Calypso Shipping is required by the authorities to verify the contents of the packages we transport. The opening process consists of three actions: <br />1. Verify that the invoice matches the contents of the package. <br />2. Ensure that the package was not damaged during transport. <br />3. Report the serial number or IMEI of electronic equipment when required by the Attorney General’s Office.</dd>
+                                    <dd class="mt-3 text-sm text-red-400">A.  There are cases where Calypso Shipping is required by the authorities to verify the contents of the packages we transport. The opening process consists of three actions: <br />1. Verify that the invoice matches the contents of the package. <br />2. Ensure that the package was not damaged during transport. <br />3. Report the serial number or IMEI of electronic equipment when required by the Attorney Generals Office.</dd>
                                 </div>
                                 <div>
                                     <dt class="text-base font-medium text-gray-900">Q. What am I NOT allowed to ship?</dt>
-                                    <dd class="mt-3 text-sm text-red-400">A.  Please see restricted items here ->
+                                    <dd class="mt-3 text-sm text-red-400">A.  Please see restricted items here :
                                         <a className=' font-semibold text-indigo-600' target='_blank' href="https://www.jacustoms.gov.jm/sites/default/files/docs/Restriction%20Items.pdf"> Click To See</a>
                                     </dd>
                                 </div>
