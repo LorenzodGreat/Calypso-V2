@@ -20,7 +20,7 @@ const AdminSettings = () => {
        
 
             <section>
-                <div class="pt-10 max-w-6xl mx-auto pb-16">
+                <div class="pt-20 max-w-6xl mx-auto pb-16">
                     <div class="px-4 sm:px-6 md:px-0">
                         <h1 class="text-3xl font-extrabold text-gray-900">Settings</h1>
                     </div>

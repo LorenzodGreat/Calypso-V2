@@ -48,7 +48,7 @@ const AdminFeedDetails = () => {
                         <h1 class="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl ">From the blog</h1>
 
                         <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
-                            <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src={`http://127.0.0.1:8000/${feedData.img}`} alt="" />
+                            <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src={`https://api.calypsoshipping.com/${feedData.img}`} alt="" />
 
                             <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
                                 <p class="text-sm text-blue-500 uppercase">Calypso News</p>

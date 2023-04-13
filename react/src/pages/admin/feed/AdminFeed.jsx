@@ -98,7 +98,7 @@ const AdminFeed = () => {
                                     <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
                                         {Data.map((item) => (
                                             <div key={item.name} class="lg:flex">
-                                                <img class="object-cover w-full h-56 rounded-lg lg:w-64" src={`http://127.0.0.1:8000/${item.img}`} alt="" />
+                                                <img class="object-cover w-full h-56 rounded-lg lg:w-64" src={`https://api.calypsoshipping.com/${item.img}`} alt="" />
 
                                                 <div class="flex flex-col justify-between py-6 lg:mx-6">
                                                     <h1 class="text-xl line-clamp-2 font-semibold text-gray-800">

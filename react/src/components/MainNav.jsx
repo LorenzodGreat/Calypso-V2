@@ -88,16 +88,18 @@ export default function MainNav() {
                   </Disclosure.Button>
                 </div>
                 <div className="flex-shrink-0 flex items-center">
+                  <a href="/home">
                   <img
                     className="block lg:hidden h-8 w-auto"
                     src={CalypsoLogo}
                     alt="Calypso Logo"
-                  />
+                    />
                   <img
                     className="hidden lg:block h-14 w-auto"
                     src={CalypsoLogo}
                     alt="Calypso Logo"
-                  />
+                    />
+                    </a>
                 </div>
                 <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
                   {navigation.map((item) => (
@@ -105,7 +107,7 @@ export default function MainNav() {
                       key={item.name}
                       href={item.href}
                       className={classNames(
-                        item.current ? 'bg-gray-900 text-white' : 'text-white hover:bg-[#593196b0] hover:text-white',
+                        item.current ? 'bg-gradient-to-br from-[#52cbe4] via-[#9f55f2] to-[#8d44de] text-white' : 'text-gray-300 hover:bg-gradient-to-br hover:from-[#52cbe4] hover:via-[#9f55f2] hover:to-[#8d44de] hover:text-white',
                         'px-3 py-2 rounded-md text-sm font-medium'
                       )}
                       aria-current={item.current ? 'page' : undefined}
@@ -193,7 +195,7 @@ export default function MainNav() {
                 </Disclosure.Button>
               ))}
             </div>
-            {user &&
+            {token &&
               <div className="pt-4 pb-3 border-t border-gray-700">
                 <div className="flex items-center px-5 sm:px-6">
                   <div className="flex-shrink-0">

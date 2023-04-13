@@ -85,13 +85,13 @@ const Blog = () => {
                                         (
                                             < section >
                                                 <div class="container px-6 pt-24 py-10 mx-auto">
-                                                    <h1 class="text-2xl font-semibold text-black capitalize lg:text-3xl ">Your blog</h1>
+                                                    <h1 class="text-2xl font-semibold text-black capitalize lg:text-3xl ">Calypso News</h1>
 
                                                     <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
                                                         {Data.map((item) => (
                                                             <div key={item.name} class="lg:flex">
                                                                 <a href={`feeds/${item.uuid}/view`} className="" >
-                                                                    <img class="object-cover w-full h-56 rounded-lg lg:w-64" src={`http://127.0.0.1:8000/${item.img}`} alt="" />
+                                                                    <img class="object-cover w-full h-56 rounded-lg lg:w-64" src={`https://api.calypsoshipping.com/${item.img}`} alt="" />
                                                                 </a>
 
                                                                 <div class="flex flex-col space-y-4 py-6 lg:mx-6">

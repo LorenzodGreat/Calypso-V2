@@ -43,7 +43,7 @@ const AdminFeedEdit = () => {
                     <h1 class="text-3xl font-semibold text-gray-800 ">Update News Feed</h1>
                     <p class="max-w-md mx-auto mt-5 text-purple-700">Please fill out form below to create your news feed today.</p>
                     <form onSubmit={handleUpdate}>
-                        <img class="object-cover w-full h-56 mx-auto my-1 rounded-lg lg:w-64" src={`http://127.0.0.1:8000/${image}`} alt="" />
+                        <img class="object-cover w-full h-56 mx-auto my-1 rounded-lg lg:w-64" src={`https://api.calypsoshipping.com/${image}`} alt="" />
                         <div class="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-2">
                             <div>
                                 <input id="title" onChange={(e) => settitle(e.target.value)} value={title} placeholder='Feed Title' type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-full dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />

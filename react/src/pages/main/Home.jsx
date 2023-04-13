@@ -40,7 +40,7 @@ const features = [
   {
     name: 'Free Cooperate delivery',
     description:
-      'Purus lobortis volutpat posuere id integer nunc tellus. Non mauris malesuada feugiat massa mi pellentesque cum est. Pharetra a varius urna rhoncus, tempor rutrum.',
+      'With our new free corporate delivery service, businesses in Kingston can enjoy our reliable and efficient shipping services at no extra cost. Whether you need to ship documents, products, or equipment, we have the expertise and resources to get the job done. Contact us today to learn more about our free corporate delivery service and how we can help streamline your business operations.',
     icon: <div class="inline-flex items-center justify-center flex-shrink-0 w-14 lg:w-[150px] md:w-[100px] h-12 mr-3 ">
       <lord-icon
         src="https://cdn.lordicon.com/sdhhsgeg.json"
@@ -54,7 +54,7 @@ const features = [
   {
     name: 'Island wide Delivery offered',
     description:
-      'Purus lobortis volutpat posuere id integer nunc tellus. Non mauris malesuada feugiat massa mi pellentesque cum est. Pharetra a varius urna rhoncus, tempor rutrum.',
+      'Calypso Shipping Ja is excited to announce that we now offer island-wide delivery in Kingston, Jamaica! Our reliable and efficient shipping services are now available across the entire island, making it easier than ever for businesses and individuals to get their packages delivered quickly and securely .',
     icon: <div class="inline-flex items-center justify-center flex-shrink-0 w-14 lg:w-[150px] md:w-[100px] h-12 mr-3 ">
       <lord-icon
         src="https://cdn.lordicon.com/hgvwxhhl.json"

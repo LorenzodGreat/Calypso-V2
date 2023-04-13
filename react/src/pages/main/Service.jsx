@@ -233,9 +233,7 @@ const Service = () => {
 
                                             <p class="text-gray-500 dark:text-gray-300">
                                                 Gifts and Purchases outside of Jamaica that are entering the island are classified 'imports'. All imports are likely to be opened and inspect by Jamaica Customs Agency (government authority), and you (the shipper) are requiring to present a proof of purchase or any documentation laying out what's inside the package to guarantee convenience in clearance and appropriate handling.
-                                            </p>import { useState } from 'react';
-import { useState } from 'react';
-
+                                            </p>
                                         </div>
 
                                         <div class="space-y-3">
